@@ -63,18 +63,18 @@ function compileDir(dir) {
     // console.log(dir)
     fs.readdir(dir, (err, files) => {
         files && files.forEach(subfile => {
-            if (!subfile.match("native") && subfile.endsWith(".tsx")
-            && !subfile.match("android") && !subfile.match("ios")
-        ) {
+            if (!subfile.match("native") && subfile.endsWith(".tsx") &&
+                !subfile.match("android") && !subfile.match("ios")
+            ) {
                 // not build src/index.tsx
                 if (!dir.endsWith("src"))
                     rollupFile(path.join(dir.substr(dir.indexOf("src") + 4), subfile).replace(".tsx", ""))
 
-            } else if (!subfile.match(/\./) && !subfile.match("tests")
-            && !subfile.match("demo") && !subfile.startsWith("_")
-            && !subfile.match("style")
-            && whiteList.indexOf(subfile) >= 0
-        ) {
+            } else if (!subfile.match(/\./) && !subfile.match("tests") &&
+                !subfile.match("demo") && !subfile.startsWith("_") &&
+                !subfile.match("style") &&
+                whiteList.indexOf(subfile) >= 0
+            ) {
                 compileDir(path.join(dir, subfile))
             }
         });
@@ -114,15 +114,14 @@ function rollupFile(file) {
                                 loose: true,
                                 exclude: ['transform-es2015-typeof-symbol'],
                                 targets: {
-                                    browsers: ['last 2 versions', 'IE >= 9']
-                                }
+                                    browsers: ["Android >= 4.4", "ios > 7"]
+                                },
+                                "useBuiltIns": true
                             }
-                        ], "stage-3"
+                        ]
                     ],
                     "plugins": [
-                        ["transform-react-jsx", {
-                            // "pragma": "h"
-                        }],
+                        ["transform-react-jsx"],
                         "external-helpers" //注意这个参数不能加，加了之后模块exports有问题，坑坑坑
                     ]
                 })
