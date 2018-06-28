@@ -120,7 +120,7 @@ function rollupFile(file) {
                     ],
                     "plugins": [
                         ["transform-react-jsx", {
-                            "pragma": "h"
+                            // "pragma": "h"
                         }],
                         "external-helpers" //注意这个参数不能加，加了之后模块exports有问题，坑坑坑
                     ]
