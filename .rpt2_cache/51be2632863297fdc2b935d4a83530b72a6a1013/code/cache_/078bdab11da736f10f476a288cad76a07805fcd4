@@ -1,0 +1,1 @@
+{"code":"export default (props) => {\r\n    return Object.keys(props).reduce((prev, key) => {\r\n        if (key.substr(0, 5) === 'aria-' ||\r\n            key.substr(0, 5) === 'data-' ||\r\n            key === 'role') {\r\n            prev[key] = props[key];\r\n        }\r\n        return prev;\r\n    }, {});\r\n};\r\n"}

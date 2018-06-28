@@ -1,0 +1,1 @@
+{"code":"import LocaleProvider from './locale-provider';\r\nexport default LocaleProvider;\r\n"}

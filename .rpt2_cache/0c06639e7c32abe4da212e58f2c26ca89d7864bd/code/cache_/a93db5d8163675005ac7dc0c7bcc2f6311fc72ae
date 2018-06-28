@@ -1,0 +1,1 @@
+{"code":"import RcSlider from 'rc-slider/lib/Slider';\r\nimport React from 'react';\r\nexport default class Slider extends React.Component {\r\n    render() {\r\n        return (<div className={`${this.props.prefixCls}-wrapper`}>\n        <RcSlider {...this.props}/>\n      </div>);\r\n    }\r\n}\r\nSlider.defaultProps = {\r\n    prefixCls: 'am-slider',\r\n};\r\n"}

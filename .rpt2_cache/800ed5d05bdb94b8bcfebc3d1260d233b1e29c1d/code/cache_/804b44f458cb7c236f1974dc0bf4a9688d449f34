@@ -1,0 +1,1 @@
+{"code":"import alert from './alert';\r\nimport Modal from './Modal';\r\nimport operation from './operation';\r\nimport prompt from './prompt';\r\nModal.alert = alert;\r\nModal.prompt = prompt;\r\nModal.operation = operation;\r\nexport default Modal;\r\n"}
