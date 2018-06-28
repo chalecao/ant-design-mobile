@@ -1,1 +1,0 @@
-{"code":"import RmcDrawer from 'rmc-drawer';\r\nimport React from 'react';\r\nexport default class Drawer extends React.Component {\r\n    render() {\r\n        return <RmcDrawer {...this.props}/>;\r\n    }\r\n}\r\nDrawer.defaultProps = {\r\n    prefixCls: 'am-drawer',\r\n    enableDragHandle: false\r\n};\r\n"}

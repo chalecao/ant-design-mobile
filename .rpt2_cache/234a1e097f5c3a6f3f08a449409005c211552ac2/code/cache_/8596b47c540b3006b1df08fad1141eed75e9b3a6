@@ -1,1 +1,0 @@
-{"code":"import Flex from './Flex';\r\nimport FlexItem from './FlexItem';\r\nFlex.Item = FlexItem;\r\nexport default Flex;\r\n"}

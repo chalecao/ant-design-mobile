@@ -1,1 +1,0 @@
-{"code":"import AgreeItem from './AgreeItem';\r\nimport Checkbox from './Checkbox';\r\nimport CheckboxItem from './CheckboxItem';\r\nCheckbox.CheckboxItem = CheckboxItem;\r\nCheckbox.AgreeItem = AgreeItem;\r\nexport default Checkbox;\r\n"}

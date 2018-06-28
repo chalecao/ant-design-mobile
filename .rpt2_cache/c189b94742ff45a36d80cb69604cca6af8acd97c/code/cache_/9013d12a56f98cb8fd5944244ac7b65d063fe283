@@ -1,1 +1,0 @@
-{"code":"import React from 'react';\r\nimport View from '../view';\r\nexport default class Text extends React.Component {\r\n    render() {\r\n        return React.createElement(View, Object.assign({}, this.props));\r\n    }\r\n}\r\nText.defaultProps = {\r\n    Component: 'span',\r\n};\r\n"}

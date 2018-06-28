@@ -1,1 +1,0 @@
-{"code":"import Radio from './Radio';\r\nimport RadioItem from './RadioItem';\r\nRadio.RadioItem = RadioItem;\r\nexport default Radio;\r\n"}
