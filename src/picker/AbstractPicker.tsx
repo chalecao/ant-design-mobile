@@ -7,6 +7,7 @@ import RMCMultiPicker from 'rmc-picker/lib/MultiPicker';
 import RMCPicker from 'rmc-picker/lib/Picker';
 import { getComponentLocale } from '../_util/getLocale';
 import { PickerData, PickerPropsType } from './PropsType';
+import localeCN from './locale/zh_CN'
 
 export interface AbstractPickerProps extends PickerPropsType {
   pickerPrefixCls?: string;
@@ -153,9 +154,7 @@ export default abstract class AbstractPicker extends React.Component<
     } = this.props;
 
     // tslint:disable-next-line:variable-name
-    const _locale = getComponentLocale(this.props, this.context, 'Picker', () =>
-      require('./locale/zh_CN'),
-    );
+    const _locale = getComponentLocale(this.props, this.context, 'Picker', () => localeCN);
 
     let cascader;
     let popupMoreProps = {};

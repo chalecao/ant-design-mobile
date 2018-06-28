@@ -8,6 +8,7 @@ import CustomInput from './CustomInput';
 import Input from './Input';
 import { InputItemPropsType } from './PropsType';
 import { Omit } from '../_util/types';
+import localeCN from './locale/zh_CN'
 
 export type HTMLInputProps = Omit<
   React.HTMLProps<HTMLInputElement>,
@@ -217,7 +218,7 @@ class InputItem extends React.Component<InputItemProps, any> {
       this.props,
       this.context,
       'InputItem',
-      () => require('./locale/zh_CN'),
+      () => localeCN
     );
 
     const {

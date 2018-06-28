@@ -4,7 +4,7 @@ import { Calendar as RMCalendar } from 'rmc-calendar';
 import { getComponentLocale } from '../_util/getLocale';
 import Icon from '../icon';
 import { CalendarProps } from './PropsType';
-
+import localeCN from './locale/zh_CN'
 export default class Calendar extends React.Component<CalendarProps, any> {
   static defaultProps = {
     prefixCls: 'am-calendar',
@@ -19,8 +19,7 @@ export default class Calendar extends React.Component<CalendarProps, any> {
   render() {
     // tslint:disable-next-line:no-this-assignment
     const { props, context } = this;
-    const locale = getComponentLocale(props, context, 'Calendar', () =>
-      require('./locale/zh_CN'),
+    const locale = getComponentLocale(props, context, 'Calendar', () => localeCN
     );
     const Header = RMCalendar.DefaultHeader;
 
