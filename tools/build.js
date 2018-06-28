@@ -49,7 +49,8 @@ const whiteList = [
     'stepper',
     'toast',
     'calendar',
-    'input-item'
+    'input-item',
+    "locale"
 ]
 
 function compileDir(dir) {
@@ -65,13 +66,13 @@ function compileDir(dir) {
             && !subfile.match("android") && !subfile.match("ios")
         ) {
                 // not build src/index.tsx
-                // if (!dir.endsWith("src"))
+                if (!dir.endsWith("src"))
                     rollupFile(path.join(dir.substr(dir.indexOf("src") + 4), subfile).replace(".tsx", ""))
 
             } else if (!subfile.match(/\./) && !subfile.match("tests")
-            && !subfile.match("demo") && !subfile.match("_")
+            && !subfile.match("demo") && !subfile.startsWith("_")
             && !subfile.match("style")
-            // && whiteList.indexOf(subfile) >= 0
+            && whiteList.indexOf(subfile) >= 0
         ) {
                 compileDir(path.join(dir, subfile))
             }
@@ -86,7 +87,7 @@ function rollupFile(file) {
     // return;
     [
         'es',
-        // 'cjs',
+        'cjs',
         // 'umd'
     ].forEach((format) => {
         promise = promise.then(() => rollup.rollup({
