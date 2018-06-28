@@ -88,7 +88,7 @@ export default class BasicListExample extends React.Component<any, any> {
               <Image
                 source={{
                   uri:
-                    'https://os.alipayobjects.com/rmsportal/mOoPurdIfmcuqtr.png',
+                    'https://os.alipayobjects.com/rmsportal/mOoPurdIfmcuqtr.png'
                 }}
                 style={{ width: 29, height: 29 }}
               />

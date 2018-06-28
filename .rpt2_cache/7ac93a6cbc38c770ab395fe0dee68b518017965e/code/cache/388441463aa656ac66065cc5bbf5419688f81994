@@ -1,1 +1,0 @@
-{"code":"export default {\r\n    WrapComponent: 'div',\r\n    transitionName: 'am-slide-up',\r\n    maskTransitionName: 'am-fade',\r\n};\r\n"}

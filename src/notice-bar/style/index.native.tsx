@@ -18,38 +18,38 @@ export default {
     height: variables.notice_bar_height,
     overflow: 'hidden',
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   container: {
     flex: 1,
     marginRight: variables.h_spacing_lg,
     overflow: 'hidden',
-    width: 0, // ios bug: width size is wrong (usecase: with react-navigation).
+    width: 0 // ios bug: width size is wrong (usecase: with react-navigation).
   },
   content: {
     fontSize: variables.font_size_subhead,
-    color: variables.brand_warning,
+    color: variables.brand_warning
   },
   left6: {
-    marginLeft: variables.h_spacing_sm,
+    marginLeft: variables.h_spacing_sm
   },
   left15: {
-    marginLeft: variables.h_spacing_lg,
+    marginLeft: variables.h_spacing_lg
   },
   actionWrap: {
-    marginRight: variables.h_spacing_lg,
+    marginRight: variables.h_spacing_lg
   },
   close: {
     color: variables.brand_warning,
     fontSize: 18,
     fontWeight: '200',
-    textAlign: 'left',
+    textAlign: 'left'
   },
   link: {
     transform: [{ rotate: '225deg' }],
     color: variables.brand_warning,
     fontSize: variables.font_size_icontext,
     fontWeight: '500',
-    textAlign: 'left',
-  },
+    textAlign: 'left'
+  }
 };

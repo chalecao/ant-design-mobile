@@ -14,7 +14,7 @@ export interface PopoverItemProps {
 export default class Item extends React.Component<PopoverItemProps, any> {
   static defaultProps = {
     prefixCls: 'am-popover',
-    disabled: false,
+    disabled: false
   };
   static myName = 'PopoverItem';
 
@@ -27,10 +27,10 @@ export default class Item extends React.Component<PopoverItemProps, any> {
       disabled,
       firstItem,
       activeStyle,
-      ...restProps,
+      ...restProps
     } = this.props;
     const cls = classnames(`${prefixCls}-item`, className, {
-      [`${prefixCls}-item-disabled`]: disabled,
+      [`${prefixCls}-item-disabled`]: disabled
     });
 
     let activeClass = `${prefixCls}-item-active `;

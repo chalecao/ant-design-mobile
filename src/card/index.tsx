@@ -14,7 +14,7 @@ export interface CardProps
 export default class Card extends React.Component<CardProps, any> {
   static defaultProps = {
     prefixCls: 'am-card',
-    full: false,
+    full: false
   };
 
   static Header = CardHeader;
@@ -24,7 +24,7 @@ export default class Card extends React.Component<CardProps, any> {
   render() {
     const { prefixCls, full, className, ...resetProps } = this.props;
     const wrapCls = classnames(prefixCls, className, {
-      [`${prefixCls}-full`]: full,
+      [`${prefixCls}-full`]: full
     });
 
     return <div className={wrapCls} {...resetProps} />;

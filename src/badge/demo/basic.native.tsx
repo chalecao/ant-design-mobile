@@ -19,7 +19,7 @@ export default class BasicTagExample extends React.Component<any, any> {
               style={{
                 width: 52,
                 height: 52,
-                backgroundColor: 'rgba(255, 140, 101, 0.15)',
+                backgroundColor: 'rgba(255, 140, 101, 0.15)'
               }}
             />
           </Badge>
@@ -31,7 +31,7 @@ export default class BasicTagExample extends React.Component<any, any> {
               style={{
                 width: 52,
                 height: 52,
-                backgroundColor: 'rgba(255, 140, 101, 0.15)',
+                backgroundColor: 'rgba(255, 140, 101, 0.15)'
               }}
             />
           </Badge>
@@ -43,7 +43,7 @@ export default class BasicTagExample extends React.Component<any, any> {
               style={{
                 width: 52,
                 height: 52,
-                backgroundColor: 'rgba(255, 140, 101, 0.15)',
+                backgroundColor: 'rgba(255, 140, 101, 0.15)'
               }}
             />
           </Badge>
@@ -55,7 +55,7 @@ export default class BasicTagExample extends React.Component<any, any> {
               style={{
                 width: 52,
                 height: 52,
-                backgroundColor: 'rgba(255, 140, 101, 0.15)',
+                backgroundColor: 'rgba(255, 140, 101, 0.15)'
               }}
             />
           </Badge>
@@ -67,7 +67,7 @@ export default class BasicTagExample extends React.Component<any, any> {
               style={{
                 width: 52,
                 height: 52,
-                backgroundColor: 'rgba(255, 140, 101, 0.15)',
+                backgroundColor: 'rgba(255, 140, 101, 0.15)'
               }}
             />
           </Badge>
@@ -79,7 +79,7 @@ export default class BasicTagExample extends React.Component<any, any> {
               style={{
                 width: 52,
                 height: 52,
-                backgroundColor: 'rgba(255, 140, 101, 0.15)',
+                backgroundColor: 'rgba(255, 140, 101, 0.15)'
               }}
             />
           </Badge>

@@ -4,5 +4,5 @@ export default {
   okText: 'OK',
   dismissText: 'Cancel',
   extra: 'please select',
-  DatePickerLocale,
+  DatePickerLocale
 };

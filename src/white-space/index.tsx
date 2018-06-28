@@ -12,7 +12,7 @@ export interface WhiteSpaceProps extends WhiteSpacePropsType {
 export default class WhiteSpace extends React.Component<WhiteSpaceProps, any> {
   static defaultProps = {
     prefixCls: 'am-whitespace',
-    size: 'md',
+    size: 'md'
   };
 
   render() {

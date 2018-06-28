@@ -16,7 +16,7 @@ export default class Stepper extends React.Component<StepProps, any> {
     step: 1,
     readOnly: false,
     showNumber: false,
-    focusOnUpDown: false,
+    focusOnUpDown: false
   };
 
   stepperRef: RMCInputNumber | null;
@@ -24,7 +24,7 @@ export default class Stepper extends React.Component<StepProps, any> {
   render() {
     const { className, showNumber, ...restProps } = this.props;
     const stepperClass = classnames(className, {
-      ['showNumber']: !!showNumber,
+      showNumber: !!showNumber
     });
 
     return (

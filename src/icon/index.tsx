@@ -15,7 +15,7 @@ export interface IconProps extends IconPropsType, SvgProps {
 
 export default class Icon extends React.Component<IconProps, any> {
   static defaultProps = {
-    size: 'md',
+    size: 'md'
   };
   componentDidMount() {
     loadSprite();
@@ -26,7 +26,7 @@ export default class Icon extends React.Component<IconProps, any> {
       className,
       'am-icon',
       `am-icon-${type}`,
-      `am-icon-${size}`,
+      `am-icon-${size}`
     );
     return (
       <svg className={cls} {...restProps}>

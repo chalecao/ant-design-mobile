@@ -9,25 +9,25 @@ export default class BasicSliderExample extends React.Component<any, any> {
       changingValue: 0.25,
       changedValue: 0.15,
       minMaxValue: 0,
-      slideCompletionCount: 0,
+      slideCompletionCount: 0
     };
   }
 
   handleChange = (value: any) => {
     this.setState({
-      changingValue: value,
+      changingValue: value
     });
   }
 
   onAfterChange = (value: any) => {
     this.setState({
-      changedValue: value,
+      changedValue: value
     });
   }
 
   minMaxChange = (value: any) => {
     this.setState({
-      minMaxValue: value,
+      minMaxValue: value
     });
   }
 

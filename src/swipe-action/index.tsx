@@ -18,7 +18,7 @@ class SwipeAction extends React.Component<SwipeActionProps, any> {
     left: [],
     right: [],
     onOpen() {},
-    onClose() {},
+    onClose() {}
   };
 
   render() {
@@ -32,7 +32,7 @@ class SwipeAction extends React.Component<SwipeActionProps, any> {
       disabled,
       onOpen,
       onClose,
-      children,
+      children
     } = this.props;
 
     const wrapClass = classnames(prefixCls, className);

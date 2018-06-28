@@ -11,7 +11,7 @@ describe('ActionSheet', () => {
       cancelButtonIndex: BUTTONS.length - 1,
       destructiveButtonIndex: BUTTONS.length - 2,
       message: '我是描述我是描述',
-      maskClosable: true,
+      maskClosable: true
     },
     (buttonIndex) => {
       // console.log(BUTTONS[buttonIndex]);
@@ -27,12 +27,12 @@ describe('ActionSheet', () => {
       { icon: <img src="https://zos.alipayobjects.com/rmsportal/HssPJKvrjEByyVWJIFwl.png" alt="sina" />, title: '新浪微博' },
       { icon: <img src="https://zos.alipayobjects.com/rmsportal/HCGowLrLFMFglxRAKjWd.png" alt="lift" />, title: '生活圈' },
       { icon: <img src="https://zos.alipayobjects.com/rmsportal/LeZNKxCTkLHDWsjFfqqn.png" alt="wechat" />, title: '微信好友' },
-      { icon: <img src="https://zos.alipayobjects.com/rmsportal/YHHFcpGxlvQIqCAvZdbw.png" alt="qq" />, title: 'QQ' },
+      { icon: <img src="https://zos.alipayobjects.com/rmsportal/YHHFcpGxlvQIqCAvZdbw.png" alt="qq" />, title: 'QQ' }
     ];
     const icons = [[...iconList], [iconList[2], iconList[3], iconList[4]]];
     ActionSheet.showShareActionSheetWithOptions({
       options: icons,
-      message: '我是描述我是描述',
+      message: '我是描述我是描述'
     },
     (buttonIndex, rowIndex) => {
       // console.log(buttonIndex, rowIndex, icons[rowIndex][buttonIndex].title);

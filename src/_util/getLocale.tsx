@@ -15,17 +15,17 @@ export function getComponentLocale(
   }
 
   let result = {
-    ...locale,
+    ...locale
   };
   if (props.locale) {
     result = {
       ...result,
-      ...props.locale,
+      ...props.locale
     };
     if (props.locale.lang) {
       result.lang = {
         ...locale.lang,
-        ...props.locale.lang,
+        ...props.locale.lang
       };
     }
   }

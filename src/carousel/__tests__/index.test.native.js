@@ -31,7 +31,7 @@ describe('Carousel.RN', () => {
     const itemStyle = {
       height: 150,
       width: 320,
-      flexGrow: 1,
+      flexGrow: 1
     };
     const wrapper = shallow(
       <Carousel selectedIndex={1}>

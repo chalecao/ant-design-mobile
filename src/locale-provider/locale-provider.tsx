@@ -16,19 +16,19 @@ export default class LocaleProvider extends React.Component<
   any
 > {
   static propTypes = {
-    locale: PropTypes.object,
+    locale: PropTypes.object
   };
 
   static childContextTypes = {
-    antLocale: PropTypes.object,
+    antLocale: PropTypes.object
   };
 
   getChildContext() {
     return {
       antLocale: {
         ...this.props.locale,
-        exist: true,
-      },
+        exist: true
+      }
     };
   }
 

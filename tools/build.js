@@ -22,7 +22,7 @@ let promise = Promise.resolve();
 var typescript = require('rollup-plugin-typescript2');
 var commonjs = require( 'rollup-plugin-commonjs')
 // Clean up the output directory
-promise = promise.then(() => del(['dist/*']));
+// promise = promise.then(() => del(['dist/*']));
 let defaults = {
     compilerOptions: {
         declaration: true
@@ -34,6 +34,7 @@ let override = {
     }
 };
 let components = [
+    'list/..',
     'list',
     'picker',
     'button',

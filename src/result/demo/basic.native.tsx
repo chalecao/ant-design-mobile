@@ -11,7 +11,7 @@ export default class ResultExample extends React.Component<any, any> {
         <Result
           imgUrl={{
             uri:
-              'https://zos.alipayobjects.com/rmsportal/GcBguhrOdlYvGfnsXgrE.png',
+              'https://zos.alipayobjects.com/rmsportal/GcBguhrOdlYvGfnsXgrE.png'
           }}
           title="验证成功"
           message="所提交内容已成功完成验证"

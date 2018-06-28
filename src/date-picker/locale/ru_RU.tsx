@@ -4,5 +4,5 @@ export default {
   okText: 'Ок',
   dismissText: 'Отмена',
   extra: '',
-  DatePickerLocale,
+  DatePickerLocale
 };

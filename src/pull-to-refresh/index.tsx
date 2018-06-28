@@ -5,7 +5,7 @@ import Icon from '../icon';
 
 export default class PullToRefresh extends React.Component<PropsType, any> {
   static defaultProps = {
-    prefixCls: 'am-pull-to-refresh',
+    prefixCls: 'am-pull-to-refresh'
   };
   render() {
     const ind = {
@@ -13,7 +13,7 @@ export default class PullToRefresh extends React.Component<PropsType, any> {
       deactivate: '下拉可以刷新',
       release: <Icon type="loading" />,
       finish: '完成刷新',
-      ...this.props.indicator,
+      ...this.props.indicator
     };
     return <RPullToRefresh {...this.props} indicator={ind} />;
   }

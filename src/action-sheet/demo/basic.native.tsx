@@ -7,7 +7,7 @@ export default class Test extends React.Component<any, any> {
     super(props);
     this.state = {
       clicked: 'none',
-      text: '',
+      text: ''
     };
   }
   render() {
@@ -34,7 +34,7 @@ export default class Test extends React.Component<any, any> {
       'Operation2',
       'Operation3',
       'Delete',
-      'Cancel',
+      'Cancel'
     ];
     ActionSheet.showActionSheetWithOptions(
       {
@@ -42,7 +42,7 @@ export default class Test extends React.Component<any, any> {
         message: 'Description',
         options: BUTTONS,
         cancelButtonIndex: 4,
-        destructiveButtonIndex: 3,
+        destructiveButtonIndex: 3
       },
       (buttonIndex: any) => {
         this.setState({ clicked: BUTTONS[buttonIndex] });
@@ -52,7 +52,7 @@ export default class Test extends React.Component<any, any> {
   showShareActionSheet = () => {
     const opts: any = {
       message: 'Message to go with the shared url',
-      title: 'Share Actionsheet',
+      title: 'Share Actionsheet'
     };
 
     if (Platform.OS === 'ios') {

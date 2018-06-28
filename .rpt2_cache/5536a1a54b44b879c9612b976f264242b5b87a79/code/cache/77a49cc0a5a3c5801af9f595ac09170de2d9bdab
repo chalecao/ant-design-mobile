@@ -1,0 +1,1 @@
+{"code":"import RcCollapse, { Panel } from 'rc-collapse';\r\nimport React from 'react';\r\nexport default class Accordion extends React.Component {\r\n    render() {\r\n        return <RcCollapse {...this.props}/>;\r\n    }\r\n}\r\nAccordion.Panel = Panel;\r\nAccordion.defaultProps = {\r\n    prefixCls: 'am-accordion'\r\n};\r\n"}

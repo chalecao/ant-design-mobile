@@ -12,5 +12,5 @@ export default {
   DatePickerView,
   InputItem,
   Picker,
-  SearchBar,
+  SearchBar
 };

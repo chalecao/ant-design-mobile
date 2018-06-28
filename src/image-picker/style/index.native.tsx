@@ -17,20 +17,20 @@ export interface IImagePickerStyle {
 export default {
   container: {
     flexWrap: 'wrap',
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
   size: {
     width: 80,
-    height: 80,
+    height: 80
   },
   item: {
     marginRight: varibles.h_spacing_sm,
     marginBottom: varibles.v_spacing_sm,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   image: {
     overflow: 'hidden',
-    borderRadius: varibles.radius_sm,
+    borderRadius: varibles.radius_sm
   },
   closeWrap: {
     width: 16,
@@ -42,7 +42,7 @@ export default {
     right: 4,
     justifyContent: 'center',
     alignItems: 'center',
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   closeText: {
     color: varibles.color_text_base_inverse,
@@ -50,26 +50,26 @@ export default {
     fontSize: 20,
     height: 20,
     marginTop: -8,
-    fontWeight: '300',
+    fontWeight: '300'
   },
   plusWrap: {
     borderRadius: varibles.radius_sm,
     borderWidth: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   plusWrapNormal: {
     backgroundColor: varibles.fill_base,
-    borderColor: varibles.border_color_base,
+    borderColor: varibles.border_color_base
   },
   plusWrapHighlight: {
     backgroundColor: varibles.fill_tap,
-    borderColor: varibles.border_color_base,
+    borderColor: varibles.border_color_base
   },
   plusText: {
     fontSize: 64,
     backgroundColor: 'transparent',
     fontWeight: '100',
-    color: varibles.color_text_caption,
-  },
+    color: varibles.color_text_caption
+  }
 };

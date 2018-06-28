@@ -10,7 +10,7 @@ const Circle = (props: any) => {
     backgroundColor: '#527fe4',
     width: size,
     height: size,
-    margin: 1,
+    margin: 1
   };
   return <View style={style} />;
 };
@@ -133,7 +133,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 20,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -143,7 +143,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 18,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -153,7 +153,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 16,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -163,7 +163,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 14,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -180,7 +180,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 20,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -190,7 +190,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 18,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -200,7 +200,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 16,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -210,7 +210,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 14,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -227,7 +227,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 20,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -237,7 +237,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 18,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -247,7 +247,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 16,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -257,7 +257,7 @@ export default class FlexExample extends React.Component<any, any> {
                 fontSize: 14,
                 borderWidth: 1,
                 borderStyle: 'solid',
-                borderColor: '#527fe4',
+                borderColor: '#527fe4'
               }}
             >
               兜兜
@@ -277,7 +277,7 @@ export default class FlexExample extends React.Component<any, any> {
                   fontSize: 20,
                   borderWidth: 1,
                   borderStyle: 'solid',
-                  borderColor: '#527fe4',
+                  borderColor: '#527fe4'
                 }}
               >
                 兜兜
@@ -287,7 +287,7 @@ export default class FlexExample extends React.Component<any, any> {
                   fontSize: 18,
                   borderWidth: 1,
                   borderStyle: 'solid',
-                  borderColor: '#527fe4',
+                  borderColor: '#527fe4'
                 }}
               >
                 兜兜
@@ -297,7 +297,7 @@ export default class FlexExample extends React.Component<any, any> {
                   fontSize: 16,
                   borderWidth: 1,
                   borderStyle: 'solid',
-                  borderColor: '#527fe4',
+                  borderColor: '#527fe4'
                 }}
               >
                 兜兜
@@ -307,7 +307,7 @@ export default class FlexExample extends React.Component<any, any> {
                   fontSize: 14,
                   borderWidth: 1,
                   borderStyle: 'solid',
-                  borderColor: '#527fe4',
+                  borderColor: '#527fe4'
                 }}
               >
                 兜兜

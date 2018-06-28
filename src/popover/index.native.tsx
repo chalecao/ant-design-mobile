@@ -4,9 +4,10 @@ import Menu, {
   MenuContext,
   MenuOption,
   MenuOptions,
-  MenuTrigger,
+  MenuTrigger
 } from 'react-native-menu';
 import { PopoverPropsType } from './PropsType';
+
 export interface PopoverProps extends PopoverPropsType {
   style?: StyleProp<ViewStyle>;
   triggerStyle?: StyleProp<ViewStyle>;
@@ -17,7 +18,7 @@ export interface PopoverProps extends PopoverPropsType {
 }
 export default class Popover extends React.Component<PopoverProps, any> {
   static defaultProps = {
-    onSelect: () => {},
+    onSelect: () => {}
   };
 
   static Item = MenuOption;
@@ -34,11 +35,11 @@ export default class Popover extends React.Component<PopoverProps, any> {
       style,
       triggerStyle,
       overlayStyle,
-      renderOverlayComponent,
+      renderOverlayComponent
     } = this.props;
     const menuOptionsProp = {
       optionsContainerStyle: overlayStyle,
-      renderOptionsContainer: renderOverlayComponent,
+      renderOptionsContainer: renderOverlayComponent
     };
     return (
       <MenuContext

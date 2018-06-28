@@ -6,6 +6,7 @@ import { getComponentLocale } from '../_util/getLocale';
 import Button from '../button';
 import Flex from '../flex';
 import { PaginationPropsType, PaginationState } from './PropsType';
+
 export interface PaginationProps extends PaginationPropsType {
   style?: React.CSSProperties;
   prefixCls?: string;
@@ -21,31 +22,31 @@ export default class Pagination extends React.Component<
     current: 1,
     total: 0,
     simple: false,
-    onChange: () => {},
+    onChange: () => {}
   };
 
   static contextTypes = {
-    antLocale: PropTypes.object,
+    antLocale: PropTypes.object
   };
 
   constructor(props: PaginationProps) {
     super(props);
     this.state = {
-      current: props.current,
+      current: props.current
     };
   }
 
   componentWillReceiveProps(nextProps: PaginationProps) {
     if (nextProps.current !== this.state.current) {
       this.setState({
-        current: nextProps.current,
+        current: nextProps.current
       });
     }
   }
 
   onChange(p: number) {
     this.setState({
-      current: p,
+      current: p
     });
     if (this.props.onChange) {
       this.props.onChange(p);
@@ -111,7 +112,7 @@ export default class Pagination extends React.Component<
           <div
             key={`dot-${i}`}
             className={classnames(`${prefixCls}-wrap-dot`, {
-              [`${prefixCls}-wrap-dot-active`]: i + 1 === current,
+              [`${prefixCls}-wrap-dot-active`]: i + 1 === current
             })}
           >
             <span />

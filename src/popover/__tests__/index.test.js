@@ -11,7 +11,7 @@ describe('Popover', () => {
         overlay={[
           (<Item key="4" value="scan">扫一扫</Item>),
           (<Item key="5" value="special">我的二维码</Item>),
-          (<Item key="6" value="button ct">帮助</Item>),
+          (<Item key="6" value="button ct">帮助</Item>)
         ]}
         mask
         visible

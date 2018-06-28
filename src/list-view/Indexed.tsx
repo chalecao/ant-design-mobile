@@ -2,6 +2,7 @@ import React from 'react';
 import MListView from 'rmc-list-view';
 import handleProps from './handleProps';
 import { ListViewPropsType } from './PropsType';
+
 const IndexedList = MListView.IndexedList;
 
 export interface MIndexedListProps extends ListViewPropsType {
@@ -22,7 +23,7 @@ export default class MIndexedList extends React.Component<
   static defaultProps = {
     prefixCls: 'am-indexed-list',
     listPrefixCls: 'am-list',
-    listViewPrefixCls: 'am-list-view',
+    listViewPrefixCls: 'am-list-view'
   };
 
   indexedListRef: any;

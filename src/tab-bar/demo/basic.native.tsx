@@ -6,7 +6,7 @@ export default class BasicTabBarExample extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      selectedTab: 'redTab',
+      selectedTab: 'redTab'
     };
   }
 
@@ -21,7 +21,7 @@ export default class BasicTabBarExample extends React.Component<any, any> {
 
   onChangeTab(tabName: any) {
     this.setState({
-      selectedTab: tabName,
+      selectedTab: tabName
     });
   }
 

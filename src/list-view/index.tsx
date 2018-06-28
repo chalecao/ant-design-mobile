@@ -18,7 +18,7 @@ export interface ListViewProps extends ListViewPropsType {
 export default class ListView extends React.Component<ListViewProps, any> {
   static defaultProps = {
     prefixCls: 'am-list-view',
-    listPrefixCls: 'am-list',
+    listPrefixCls: 'am-list'
   };
   static DataSource = MListView.DataSource;
   static IndexedList = IndexedList;

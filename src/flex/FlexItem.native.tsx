@@ -3,7 +3,7 @@ import {
   StyleProp,
   TouchableWithoutFeedback,
   View,
-  ViewStyle,
+  ViewStyle
 } from 'react-native';
 import { FlexItemPropsType } from './PropsType';
 
@@ -18,12 +18,12 @@ export interface FlexItemProps extends FlexItemPropsType {
 
 export default class FlexItem extends React.Component<FlexItemProps, any> {
   static defaultProps = {
-    flex: 1,
+    flex: 1
   };
   render() {
     const { style, children, flex, ...restProps } = this.props;
     const flexItemStyle = {
-      flex: flex || 1,
+      flex: flex || 1
     };
     // support other touchablewithoutfeedback props
     // TODO  support TouchableHighlight
@@ -39,14 +39,13 @@ export default class FlexItem extends React.Component<FlexItemProps, any> {
       restProps.onPressIn ||
       restProps.onPressOut;
 
-    if (!!shouldWrapInTouchableComponent) {
+    if (shouldWrapInTouchableComponent) {
       return (
         <TouchableWithoutFeedback {...restProps}>
           {inner}
         </TouchableWithoutFeedback>
       );
-    } else {
-      return inner;
     }
+    return inner;
   }
 }

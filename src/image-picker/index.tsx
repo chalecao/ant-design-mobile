@@ -25,7 +25,7 @@ export default class ImagePicker extends React.Component<
     onFail: noop,
     selectable: true,
     multiple: false,
-    accept: 'image/*',
+    accept: 'image/*'
   };
 
   fileSelectorInput: HTMLInputElement | null;

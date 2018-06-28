@@ -5,7 +5,7 @@ import { Text, View } from 'react-native';
 
 export default class DatePickerViewExample extends React.Component {
   state = {
-    value: null,
+    value: null
   };
   onChange = (value: any) => {
     console.log(value);

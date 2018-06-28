@@ -47,7 +47,7 @@ class Button extends React.Component<ButtonProps, any> {
     inline: false,
     disabled: false,
     loading: false,
-    activeStyle: {},
+    activeStyle: {}
   };
 
   render() {
@@ -76,7 +76,7 @@ class Button extends React.Component<ButtonProps, any> {
       [`${prefixCls}-inline`]: inline,
       [`${prefixCls}-disabled`]: disabled,
       [`${prefixCls}-loading`]: loading,
-      [`${prefixCls}-icon`]: !!iconType,
+      [`${prefixCls}-icon`]: !!iconType
     });
 
     const kids = React.Children.map(children, insertSpace);
@@ -99,7 +99,7 @@ class Button extends React.Component<ButtonProps, any> {
         size === 'small' ? 'am-icon-xxs' : 'am-icon-md',
       );
       iconEl = React.cloneElement(iconType, {
-        className: rawCls ? `${rawCls} ${cls}` : cls,
+        className: rawCls ? `${rawCls} ${cls}` : cls
       });
     }
     // use div, button native is buggy @yiminghe

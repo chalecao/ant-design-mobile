@@ -31,20 +31,20 @@ export default class Carousel extends React.Component<
     cellAlign: 'center',
     selectedIndex: 0,
     dotStyle: {},
-    dotActiveStyle: {},
+    dotActiveStyle: {}
   };
 
   constructor(props: CarouselProps) {
     super(props);
     this.state = {
-      selectedIndex: this.props.selectedIndex,
+      selectedIndex: this.props.selectedIndex
     };
   }
 
   onChange = (index: number) => {
     this.setState(
       {
-        selectedIndex: index,
+        selectedIndex: index
       },
       () => {
         if (this.props.afterChange) {
@@ -61,7 +61,7 @@ export default class Carousel extends React.Component<
       beforeChange,
       afterChange,
       dots,
-      ...restProps,
+      ...restProps
     } = this.props;
 
     const {
@@ -69,14 +69,14 @@ export default class Carousel extends React.Component<
       dotActiveStyle,
       dotStyle,
       className,
-      vertical,
+      vertical
     } = restProps;
 
     const newProps = {
       ...restProps,
       wrapAround: infinite,
       slideIndex: selectedIndex,
-      beforeSlide: beforeChange,
+      beforeSlide: beforeChange
     };
 
     let Decorators: any[] = [];
@@ -87,7 +87,7 @@ export default class Carousel extends React.Component<
           component: ({
             slideCount,
             slidesToScroll,
-            currentSlide,
+            currentSlide
           }: {
             slideCount: number;
             slidesToScroll: number;
@@ -97,9 +97,9 @@ export default class Carousel extends React.Component<
             for (let i = 0; i < slideCount; i += slidesToScroll) {
               arr.push(i);
             }
-            const dotDom = arr.map(index => {
+            const dotDom = arr.map((index) => {
               const dotCls = classnames(`${prefixCls}-wrap-dot`, {
-                [`${prefixCls}-wrap-dot-active`]: index === currentSlide,
+                [`${prefixCls}-wrap-dot-active`]: index === currentSlide
               });
               const currentDotStyle =
                 index === currentSlide ? dotActiveStyle : dotStyle;
@@ -111,13 +111,13 @@ export default class Carousel extends React.Component<
             });
             return <div className={`${prefixCls}-wrap`}>{dotDom}</div>;
           },
-          position: 'BottomCenter',
-        },
+          position: 'BottomCenter'
+        }
       ];
     }
 
     const wrapCls = classnames(prefixCls, className, {
-      [`${prefixCls}-vertical`]: vertical,
+      [`${prefixCls}-vertical`]: vertical
     });
 
     return (

@@ -13,7 +13,7 @@ export default class SegmentedControl extends React.Component<
 > {
   static defaultProps = {
     tintColor: '#108ee9',
-    selectedIndex: 0,
+    selectedIndex: 0
   };
 
   render() {

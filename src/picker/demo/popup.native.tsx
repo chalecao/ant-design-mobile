@@ -21,14 +21,14 @@ export default class PopupExample extends React.Component<any, any> {
     this.state = {
       data: [],
       value: [],
-      pickerValue: [],
+      pickerValue: []
     };
   }
   onClick = () => {
     // console.log('start loading data');
     setTimeout(() => {
       this.setState({
-        data: district,
+        data: district
       });
     }, 500);
   }

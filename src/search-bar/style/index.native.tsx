@@ -13,7 +13,7 @@ export interface ISearchBarStyle {
 export default {
   inputWrapper: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
   input: {
     borderRadius: variables.radius_md,
@@ -27,7 +27,7 @@ export default {
     paddingRight: variables.h_spacing_lg + variables.icon_size_xxs + variables.h_spacing_sm,
     flex: 1,
     paddingTop: 0,
-    paddingBottom: 0,
+    paddingBottom: 0
   },
   wrapper: {
     backgroundColor: variables.search_bar_fill,
@@ -35,17 +35,17 @@ export default {
     paddingLeft: variables.h_spacing_md,
     paddingRight: variables.h_spacing_md,
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   cancelTextContainer: {
     height: variables.search_bar_input_height,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   cancelText: {
     fontSize: variables.link_button_font_size,
     color: variables.color_link,
-    paddingLeft: variables.h_spacing_lg,
+    paddingLeft: variables.h_spacing_lg
   },
   search: {
     tintColor: variables.input_color_icon,
@@ -53,6 +53,6 @@ export default {
     left: variables.h_spacing_md + 8,
     top: (variables.search_bar_height - variables.icon_size_xxs) / 2,
     width: variables.icon_size_xxs,
-    height: variables.icon_size_xxs,
-  },
+    height: variables.icon_size_xxs
+  }
 };

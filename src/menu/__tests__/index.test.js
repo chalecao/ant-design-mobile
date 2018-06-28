@@ -7,7 +7,7 @@ describe('Menu', () => {
   const data = [
     {
       label: 'Item1',
-      value: '1',
+      value: '1'
     },
     {
       label: 'Item2',
@@ -15,14 +15,14 @@ describe('Menu', () => {
       children: [
         {
           label: 'Item21',
-          value: '21',
+          value: '21'
         },
         {
           label: 'Item22',
-          value: '22',
-        },
-      ],
-    },
+          value: '22'
+        }
+      ]
+    }
   ];
 
   it('renders correctly', () => {

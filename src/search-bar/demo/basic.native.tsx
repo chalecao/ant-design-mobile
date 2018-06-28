@@ -4,7 +4,7 @@ import { Alert, View } from 'react-native';
 
 export default class SearchBarDemo extends React.Component<any, any> {
   state = {
-    value: '美食',
+    value: '美食'
   };
 
   onChange = (value: any) => {

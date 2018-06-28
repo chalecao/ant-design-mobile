@@ -9,39 +9,39 @@ export default class BasicModalExample extends React.Component<any, any> {
     this.state = {
       visible: false,
       visible1: false,
-      visible2: false,
+      visible2: false
     };
   }
 
   onClose = () => {
     this.setState({
-      visible: false,
+      visible: false
     });
   }
 
   onClose1 = () => {
     this.setState({
-      visible1: false,
+      visible1: false
     });
   }
 
   onClose2 = () => {
     this.setState({
-      visible2: false,
+      visible2: false
     });
   }
 
   onButtonClick = () => {
     Modal.alert('Title', 'alert content', [
       { text: 'Cancel', onPress: () => console.log('cancel'), style: 'cancel' },
-      { text: 'OK', onPress: () => console.log('ok') },
+      { text: 'OK', onPress: () => console.log('ok') }
     ]);
   }
 
   onButtonClick2 = () => {
     Modal.operation([
       { text: '标为未读', onPress: () => console.log('标为未读被点击了') },
-      { text: '置顶聊天', onPress: () => console.log('置顶聊天被点击了') },
+      { text: '置顶聊天', onPress: () => console.log('置顶聊天被点击了') }
     ]);
   }
 
@@ -80,7 +80,7 @@ export default class BasicModalExample extends React.Component<any, any> {
   render() {
     const footerButtons = [
       { text: 'Cancel', onPress: () => console.log('cancel') },
-      { text: 'Ok', onPress: () => console.log('ok') },
+      { text: 'Ok', onPress: () => console.log('ok') }
     ];
     return (
       <ScrollView style={{ marginTop: 20 }}>

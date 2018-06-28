@@ -3,7 +3,7 @@ import {
   ActionSheetIOS,
   ActionSheetIOSOptions,
   Platform,
-  Share,
+  Share
 } from 'react-native';
 import topView from 'rn-topview';
 import ActionSheetAndroidContainer from './AndroidContainer.native';
@@ -72,7 +72,7 @@ export default {
           }
         }
       })
-      .catch(error => {
+      .catch((error) => {
         if (failureCallback) {
           failureCallback(error);
         }
@@ -83,5 +83,5 @@ export default {
     if (instance) {
       instance.close();
     }
-  },
+  }
 };

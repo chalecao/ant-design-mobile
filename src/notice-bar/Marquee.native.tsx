@@ -6,7 +6,7 @@ import {
   StyleProp,
   Text,
   TextStyle,
-  View,
+  View
 } from 'react-native';
 
 export interface MarqueeProps {
@@ -27,7 +27,7 @@ class Marquee extends React.PureComponent<MarqueeProps, any> {
     leading: 500,
     trailing: 800,
     fps: 40,
-    maxWidth: 1000,
+    maxWidth: 1000
   };
 
   texts: any;
@@ -39,7 +39,7 @@ class Marquee extends React.PureComponent<MarqueeProps, any> {
 
     this.texts = {};
     this.state = {
-      left: new Animated.Value(0),
+      left: new Animated.Value(0)
     };
   }
 
@@ -64,7 +64,7 @@ class Marquee extends React.PureComponent<MarqueeProps, any> {
       this.width = e.nativeEvent.layout.width;
       this.setState(
         {
-          left: new Animated.Value(0),
+          left: new Animated.Value(0)
         },
         () => {
           this.tryStart();
@@ -83,7 +83,7 @@ class Marquee extends React.PureComponent<MarqueeProps, any> {
       duration: twidth * SPPED,
       easing: Easing.linear,
       delay: props.leading,
-      isInteraction: false,
+      isInteraction: false
     }).start(() => {
       if (loop) {
         this.moveToHeader();
@@ -96,7 +96,7 @@ class Marquee extends React.PureComponent<MarqueeProps, any> {
       toValue: 0,
       duration: 0,
       delay: this.props.trailing,
-      isInteraction: false,
+      isInteraction: false
     }).start(() => {
       this.startMove();
     });
@@ -126,7 +126,7 @@ class Marquee extends React.PureComponent<MarqueeProps, any> {
           style={{
             flexDirection: 'row',
             left: this.state.left,
-            width: maxWidth,
+            width: maxWidth
           }}
         >
           {textChildren}

@@ -20,21 +20,21 @@ export default class Tag extends React.Component<TagProps, any> {
     small: false,
     onChange() {},
     onClose() {},
-    afterClose() {},
+    afterClose() {}
   };
 
   constructor(props: TagProps) {
     super(props);
     this.state = {
       selected: props.selected,
-      closed: false,
+      closed: false
     };
   }
 
   componentWillReceiveProps(nextProps: TagProps) {
     if (this.props.selected !== nextProps.selected) {
       this.setState({
-        selected: nextProps.selected,
+        selected: nextProps.selected
       });
     }
   }
@@ -47,7 +47,7 @@ export default class Tag extends React.Component<TagProps, any> {
     const isSelect = this.state.selected;
     this.setState(
       {
-        selected: !isSelect,
+        selected: !isSelect
       },
       () => {
         if (onChange) {
@@ -63,7 +63,7 @@ export default class Tag extends React.Component<TagProps, any> {
     }
     this.setState(
       {
-        closed: true,
+        closed: true
       },
       this.props.afterClose,
     );
@@ -77,7 +77,7 @@ export default class Tag extends React.Component<TagProps, any> {
       disabled,
       closable,
       small,
-      style,
+      style
     } = this.props;
     const wrapCls = classnames(className, prefixCls, {
       [`${prefixCls}-normal`]:
@@ -86,7 +86,7 @@ export default class Tag extends React.Component<TagProps, any> {
       [`${prefixCls}-active`]:
         this.state.selected && !disabled && !small && !closable,
       [`${prefixCls}-disabled`]: disabled,
-      [`${prefixCls}-closable`]: closable,
+      [`${prefixCls}-closable`]: closable
     });
 
     const closableDom =

@@ -17,33 +17,33 @@ export interface ITabBarStyle {
 
 export default {
   tabbar: {
-    flex: 1,
+    flex: 1
   },
   content: {
-    flex: 1,
+    flex: 1
   },
   tabs: {
     height: variables.tab_bar_height,
     borderTopWidth: variables.border_width_md,
     borderColor: variables.border_color_base,
     borderStyle: 'solid',
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
   barItem: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   barIcon: {
     width: 28,
     height: 28,
-    marginTop: 2,
+    marginTop: 2
   },
   barItemSelected: {
   },
   barItemTitle: {
     fontSize: variables.font_size_icontext,
-    marginTop: 2,
+    marginTop: 2
   },
   contentItem: {
     position: 'absolute',
@@ -52,10 +52,10 @@ export default {
     right: 0,
     bottom: 0,
     backgroundColor: 'white',
-    height: 0,
+    height: 0
   },
   contentItemSelected: {
-    height: null,
+    height: null
   },
   badge: {
     minWidth: 20,
@@ -65,10 +65,10 @@ export default {
     position: 'absolute',
     top: 0,
     left: 20,
-    paddingHorizontal: variables.h_spacing_sm,
+    paddingHorizontal: variables.h_spacing_sm
   },
   badgeText: {
     textAlign: 'center',
-    color: 'white',
-  },
+    color: 'white'
+  }
 };

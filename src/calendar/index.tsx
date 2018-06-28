@@ -9,11 +9,11 @@ export default class Calendar extends React.Component<CalendarProps, any> {
   static defaultProps = {
     prefixCls: 'am-calendar',
     timePickerPrefixCls: 'am-picker',
-    timePickerPickerPrefixCls: 'am-picker-col',
+    timePickerPickerPrefixCls: 'am-picker-col'
   };
 
   static contextTypes = {
-    antLocale: PropTypes.object,
+    antLocale: PropTypes.object
   };
 
   render() {

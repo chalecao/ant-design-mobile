@@ -73,5 +73,5 @@ export default {
   },
   hide() {
     topView.remove();
-  },
+  }
 };

@@ -6,13 +6,13 @@ export default class SwitchExample extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      checked: false,
+      checked: false
     };
   }
 
   onSwitchChange = (value: any) => {
     this.setState({
-      checked: value,
+      checked: value
     });
   }
   render() {

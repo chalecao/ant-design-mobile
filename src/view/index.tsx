@@ -1,4 +1,5 @@
 import React from 'react';
+
 export interface ViewProps<T> extends React.HTMLProps<T> {
   Component?: string;
 }
@@ -7,18 +8,18 @@ export default class View extends React.Component<
   any
 > {
   static defaultProps = {
-    Component: 'div',
+    Component: 'div'
   };
   render() {
     const props = {
-      ...this.props,
+      ...this.props
     };
     if (Array.isArray(props.style)) {
       let style = {};
-      props.style.forEach(s => {
+      props.style.forEach((s) => {
         style = {
           ...style,
-          ...s,
+          ...s
         };
       });
       props.style = style;

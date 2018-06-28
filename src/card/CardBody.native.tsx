@@ -8,7 +8,7 @@ export interface CardBodyProps {
 
 export default class CardBody extends React.Component<CardBodyProps, any> {
   static defaultProps = {
-    style: {},
+    style: {}
   };
 
   render() {

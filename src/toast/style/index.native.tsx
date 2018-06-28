@@ -22,37 +22,37 @@ export default {
     backgroundColor: 'transparent',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: variables.toast_zindex,
+    zIndex: variables.toast_zindex
   },
   innerContainer: {
-    backgroundColor: 'transparent',
+    backgroundColor: 'transparent'
   },
   innerWrap: {
     alignItems: 'center',
     backgroundColor: variables.toast_fill,
-    minWidth: 100,
+    minWidth: 100
   },
   iconToast: {
     borderRadius: variables.radius_lg,
-    padding: variables.v_spacing_lg,
+    padding: variables.v_spacing_lg
   },
   textToast: {
     borderRadius: variables.radius_sm,
     paddingVertical: variables.v_spacing_md,
-    paddingHorizontal: variables.v_spacing_lg,
+    paddingHorizontal: variables.v_spacing_lg
   },
   content: {
     color: variables.color_text_base_inverse,
-    fontSize: variables.font_size_subhead,
+    fontSize: variables.font_size_subhead
   },
   image: {
     width: variables.icon_size_lg,
     height: variables.icon_size_lg,
-    marginBottom: variables.v_spacing_xs,
+    marginBottom: variables.v_spacing_xs
   },
   centering: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: variables.v_spacing_md,
-  },
+    padding: variables.v_spacing_md
+  }
 };

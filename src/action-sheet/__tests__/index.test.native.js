@@ -15,7 +15,7 @@ describe('ActionSheet', () => {
         message: '我是描述我是描述',
         options: BUTTONS,
         cancelButtonIndex: 4,
-        destructiveButtonIndex: 3,
+        destructiveButtonIndex: 3
       },
       (buttonIndex) => {
         console.log(BUTTONS[buttonIndex]);

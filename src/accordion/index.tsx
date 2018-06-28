@@ -14,7 +14,7 @@ export default class Accordion extends React.Component<AccordionProps, any> {
   static Panel = Panel;
 
   static defaultProps = {
-    prefixCls: 'am-accordion',
+    prefixCls: 'am-accordion'
   };
 
   render() {

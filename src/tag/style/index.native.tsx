@@ -25,7 +25,7 @@ export default {
     borderRadius: variables.radius_sm,
     backgroundColor: 'transparent',
     flexDirection: 'row',
-    overflow: 'visible',
+    overflow: 'visible'
   },
   wrap: {
     overflow: 'hidden',
@@ -33,43 +33,43 @@ export default {
     borderWidth: variables.border_width_sm,
     borderStyle: 'solid',
     paddingVertical: variables.v_spacing_sm,
-    paddingHorizontal: variables.h_spacing_lg,
+    paddingHorizontal: variables.h_spacing_lg
   },
   wrapSmall: {
     paddingVertical: 1.5,
-    paddingHorizontal: variables.h_spacing_sm,
+    paddingHorizontal: variables.h_spacing_sm
   },
   text: {
     fontSize: variables.button_font_size_sm,
-    textAlign: 'center',
+    textAlign: 'center'
   },
   textSmall: {
-    fontSize: variables.font_size_icontext,
+    fontSize: variables.font_size_icontext
   },
   normalWrap: {
     backgroundColor: variables.fill_base,
-    borderColor: variables.border_color_base,
+    borderColor: variables.border_color_base
   },
   normalText: {
-    color: variables.color_text_caption,
+    color: variables.color_text_caption
   },
   activeWrap: {
     backgroundColor: variables.fill_base,
-    borderColor: variables.brand_primary,
+    borderColor: variables.brand_primary
   },
   activeText: {
-    color: variables.color_link,
+    color: variables.color_link
   },
   disabledWrap: {
     backgroundColor: variables.fill_disabled,
-    borderWidth: 0,
+    borderWidth: 0
   },
   disabledText: {
-    color: variables.color_text_disabled,
+    color: variables.color_text_disabled
   },
   close: {
     position: 'absolute',
-    backgroundColor: variables.color_text_placeholder,
+    backgroundColor: variables.color_text_placeholder
   },
   closeIOS: {
     borderRadius: 8,
@@ -77,7 +77,7 @@ export default {
     height: 16,
     left: -5,
     top: -4,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   closeAndroid: {
     width: 16,
@@ -85,18 +85,18 @@ export default {
     left: -2,
     top: -10,
     transform: [{
-      rotate: '45deg',
-    }],
+      rotate: '45deg'
+    }]
   },
   closeText: {
     color: variables.color_text_base_inverse,
     textAlign: 'center',
     fontSize: 20,
-    lineHeight: 18,
+    lineHeight: 18
   },
   closeTransform: {
     transform: [{
-      rotate: '-45deg',
-    }],
-  },
+      rotate: '-45deg'
+    }]
+  }
 };

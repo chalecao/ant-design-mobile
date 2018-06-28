@@ -18,21 +18,21 @@ export default class AlertContainer extends React.Component<
   constructor(props: AlertContainerProps) {
     super(props);
     this.state = {
-      visible: true,
+      visible: true
     };
   }
 
   onClose = () => {
     this.setState({
-      visible: false,
+      visible: false
     });
   }
 
   render() {
     const { title, actions, content, onAnimationEnd } = this.props;
-    const footer = actions.map(button => {
+    const footer = actions.map((button) => {
       // tslint:disable-next-line:only-arrow-functions
-      const orginPress = button.onPress || function() {};
+      const orginPress = button.onPress || function () {};
       button.onPress = () => {
         const res = orginPress();
         if (res && res.then) {
@@ -55,7 +55,7 @@ export default class AlertContainer extends React.Component<
         onAnimationEnd={onAnimationEnd}
         bodyStyle={{
           marginTop: 8,
-          alignItems: 'center',
+          alignItems: 'center'
         }}
       >
         <ScrollView>

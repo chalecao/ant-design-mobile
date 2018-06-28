@@ -23,8 +23,8 @@ describe('SegmentedControl', () => {
       {
         nativeEvent: {
           selectedSegmentIndex: 1,
-          value: '切换二',
-        },
+          value: '切换二'
+        }
       },
     );
     expect(wrapper.find('.am-segment-item').at(0).hasClass('am-segment-item-selected')).toBeFalsy();

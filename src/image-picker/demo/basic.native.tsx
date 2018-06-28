@@ -9,42 +9,42 @@ export default class ImagePickerExample extends React.Component<any, any> {
       files: [
         {
           url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2121',
+          id: '2121'
         },
         {
           url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2122',
+          id: '2122'
         },
         {
           url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2123',
+          id: '2123'
         },
         {
           url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2124',
+          id: '2124'
         },
         {
           url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2125',
+          id: '2125'
         },
         {
           url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2126',
-        },
+          id: '2126'
+        }
       ],
-      files2: [],
+      files2: []
     };
   }
 
   handleFileChange = (files: any) => {
     this.setState({
-      files,
+      files
     });
   }
 
   handleFile2Change = (files2: any) => {
     this.setState({
-      files2,
+      files2
     });
   }
 

@@ -18,13 +18,13 @@ export default {
     bottom: 0,
     right: 0,
     backgroundColor: 'transparent',
-    zIndex: variables.toast_zindex,
+    zIndex: variables.toast_zindex
   },
   innerContainer: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: 'transparent'
   },
   wrapper: {
     alignItems: 'center',
@@ -32,21 +32,21 @@ export default {
     width: 89,
     height: 89,
     borderRadius: variables.radius_md,
-    backgroundColor: variables.toast_fill,
+    backgroundColor: variables.toast_fill
   },
   tip: {
     color: variables.color_text_base,
     fontSize: variables.font_size_base,
-    marginLeft: variables.h_spacing_md,
+    marginLeft: variables.h_spacing_md
   },
   toast: {
     color: variables.color_text_base_inverse,
     fontSize: variables.font_size_base,
-    marginTop: variables.v_spacing_sm,
+    marginTop: variables.v_spacing_sm
   },
   spinner: {
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center',
-  },
+    alignItems: 'center'
+  }
 };

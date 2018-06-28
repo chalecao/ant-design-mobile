@@ -1,6 +1,7 @@
 /* tslint:disable:jsx-no-multiline-js */
 import { Icon, WingBlank } from 'antd-mobile';
 import Steps from '../index.native';
+
 const Step = Steps.Step;
 import React from 'react';
 import { ScrollView, Text, View } from 'react-native';
@@ -12,30 +13,30 @@ export default class BasicTimelineExample extends React.Component<any, any> {
       steps1: [
         { title: 'Finished', description: 'This is description' },
         { title: 'In Progress', description: 'This is description' },
-        { title: 'Waiting', description: 'This is description' },
+        { title: 'Waiting', description: 'This is description' }
       ],
       steps2: [
         {
           title: 'Finished',
           description: 'This is description',
-          status: 'finish',
+          status: 'finish'
         },
         {
           title: 'In Progress',
           description: 'This is description',
-          status: 'process',
+          status: 'process'
         },
         {
           title: 'Waiting',
           description: 'This is description',
-          status: 'error',
+          status: 'error'
         },
         {
           title: 'Waiting',
           description: 'This is description',
-          status: 'wait',
-        },
-      ],
+          status: 'wait'
+        }
+      ]
     };
   }
   render() {

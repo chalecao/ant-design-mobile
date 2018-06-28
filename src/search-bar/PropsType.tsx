@@ -34,5 +34,5 @@ export const defaultProps = {
   onBlur: noop,
   onClear: noop,
   showCancelButton: false,
-  disabled: false,
+  disabled: false
 };

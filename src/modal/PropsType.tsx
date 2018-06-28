@@ -1,4 +1,5 @@
 import React from 'react';
+
 export interface ModalPropsType<T> {
   title?: React.ReactNode;
   visible: boolean;

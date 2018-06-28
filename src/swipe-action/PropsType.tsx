@@ -2,7 +2,7 @@
  * T for web or react native
  */
 export interface SwipeActionPropsType<T> {
-  /** whether button is disabled*/
+  /** whether button is disabled */
   autoClose?: boolean;
   disabled?: boolean;
   title?: string;

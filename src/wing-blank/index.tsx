@@ -11,7 +11,7 @@ export interface WingBlankProps extends WingBlankPropsType {
 export default class WingBlank extends React.Component<WingBlankProps, any> {
   static defaultProps = {
     prefixCls: 'am-wingblank',
-    size: 'lg',
+    size: 'lg'
   };
 
   render() {

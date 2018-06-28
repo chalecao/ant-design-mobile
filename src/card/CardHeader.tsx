@@ -12,7 +12,7 @@ export interface CardHeaderProps extends CardHeaderPropsType {
 export default class CardHeader extends React.Component<CardHeaderProps, any> {
   static defaultProps = {
     prefixCls: 'am-card',
-    thumbStyle: {},
+    thumbStyle: {}
   };
 
   render() {
@@ -23,7 +23,7 @@ export default class CardHeader extends React.Component<CardHeaderProps, any> {
       thumb,
       thumbStyle,
       extra,
-      ...restProps,
+      ...restProps
     } = this.props;
     const wrapCls = classnames(`${prefixCls}-header`, className);
 

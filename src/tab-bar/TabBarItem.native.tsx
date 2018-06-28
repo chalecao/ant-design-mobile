@@ -7,7 +7,7 @@ import {
   StyleProp,
   Text,
   TouchableWithoutFeedback,
-  View,
+  View
 } from 'react-native';
 
 export interface TabBarItemProps {
@@ -19,7 +19,7 @@ export interface TabBarItemProps {
   title: string;
   tintColor?: string;
   unselectedTintColor?: string;
-  /*react-native android only*/
+  /* react-native android only */
   iconStyle?: StyleProp<ImageStyle>;
   renderAsOriginal?: boolean;
   /* react-native only */
@@ -28,7 +28,7 @@ export interface TabBarItemProps {
 
 export default class TabBarItem extends React.Component<TabBarItemProps, any> {
   static defaultProps = {
-    onPress() {},
+    onPress() {}
   };
   render() {
     const {
@@ -41,7 +41,7 @@ export default class TabBarItem extends React.Component<TabBarItemProps, any> {
       onPress,
       badge,
       styles,
-      iconStyle,
+      iconStyle
     } = this.props;
     const itemSelectedStyle = selected ? styles.barItemSelected : null;
     const badgeDom = badge ? (
@@ -68,7 +68,7 @@ export default class TabBarItem extends React.Component<TabBarItemProps, any> {
             // tslint:disable-next-line:jsx-no-multiline-js
             style={[
               styles.barItemTitle,
-              { color: selected ? tintColor : unselectedTintColor },
+              { color: selected ? tintColor : unselectedTintColor }
             ]}
           >
             {title}

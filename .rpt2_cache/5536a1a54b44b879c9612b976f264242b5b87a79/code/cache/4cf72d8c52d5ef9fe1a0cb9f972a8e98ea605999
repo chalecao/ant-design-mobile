@@ -1,0 +1,1 @@
+{"code":"import RcRange from 'rc-slider/lib/Range';\r\nimport React from 'react';\r\nexport default class Range extends React.Component {\r\n    render() {\r\n        return (<div className={`${this.props.prefixCls}-wrapper`}>\n        <RcRange {...this.props}/>\n      </div>);\r\n    }\r\n}\r\nRange.defaultProps = {\r\n    prefixCls: 'am-slider'\r\n};\r\n"}

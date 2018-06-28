@@ -14,7 +14,7 @@ export default {
     overflow: 'hidden',
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: variables.brand_primary,
-    borderRadius: variables.radius_md,
+    borderRadius: variables.radius_md
   },
   item: {
     flex: 1,
@@ -23,18 +23,18 @@ export default {
     borderRightWidth: StyleSheet.hairlineWidth,
     borderStyle: 'solid',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   itemLeftRadius: {
     borderTopLeftRadius: variables.radius_md,
-    borderBottomLeftRadius: variables.radius_md,
+    borderBottomLeftRadius: variables.radius_md
   },
   itemRightRadius: {
     borderTopRightRadius: variables.radius_md,
-    borderBottomRightRadius: variables.radius_md,
+    borderBottomRightRadius: variables.radius_md
   },
   itemText: {
     textAlign: 'center',
-    fontSize: variables.font_size_caption_sm,
-  },
+    fontSize: variables.font_size_caption_sm
+  }
 };

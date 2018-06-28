@@ -10,7 +10,7 @@ export default class NoticeBarExample extends React.Component<any, any> {
       <Image
         // tslint:disable-next-line:jsx-no-multiline-js
         source={{
-          uri: 'https://zos.alipayobjects.com/rmsportal/bRnouywfdRsCcLU.png',
+          uri: 'https://zos.alipayobjects.com/rmsportal/bRnouywfdRsCcLU.png'
         }}
         style={{ width: 12, height: 12 }}
       />
@@ -19,7 +19,7 @@ export default class NoticeBarExample extends React.Component<any, any> {
     return (
       <View style={{ marginTop: 10 }}>
         <WhiteSpace size="lg" />
-        {/* marqueeProps.style only support text style props*/}
+        {/* marqueeProps.style only support text style props */}
         <NoticeBar
           onClick={() => alert('click')}
           marqueeProps={{ loop: true, style: { fontSize: 12, color: 'red' } }}

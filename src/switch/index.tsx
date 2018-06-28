@@ -49,10 +49,10 @@ export default class Switch extends React.Component<SwitchProps, any> {
       className,
       platform,
       color,
-      ...restProps,
+      ...restProps
     } = this.props;
     const wrapCls = classnames(prefixCls, className, {
-      [`${prefixCls}-android`]: platform === 'android',
+      [`${prefixCls}-android`]: platform === 'android'
     });
 
     const fackInputCls = classnames('checkbox', {

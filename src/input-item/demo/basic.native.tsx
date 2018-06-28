@@ -23,7 +23,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
       bankCard: '',
       phone: '',
       password: '',
-      number: '',
+      number: ''
     };
   }
 
@@ -43,7 +43,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.value}
             onChange={(value: any) => {
               this.setState({
-                value,
+                value
               });
             }}
             extra="元"
@@ -59,7 +59,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value="不可编辑"
             onChange={(value: any) => {
               this.setState({
-                value,
+                value
               });
             }}
             extra={<Text>元</Text>}
@@ -73,7 +73,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.value1}
             onChange={(value: any) => {
               this.setState({
-                value1: value,
+                value1: value
               });
             }}
             placeholder="无标签"
@@ -113,7 +113,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.labelnum1}
             onChange={(value: any) => {
               this.setState({
-                labelnum1: value,
+                labelnum1: value
               });
             }}
             labelNumber={2}
@@ -126,7 +126,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.labelnum2}
             onChange={(value: any) => {
               this.setState({
-                labelnum2: value,
+                labelnum2: value
               });
             }}
             labelNumber={3}
@@ -139,7 +139,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.labelnum3}
             onChange={(value: any) => {
               this.setState({
-                labelnum3: value,
+                labelnum3: value
               });
             }}
             labelNumber={4}
@@ -155,7 +155,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.text}
             onChange={(value: any) => {
               this.setState({
-                text: value,
+                text: value
               });
             }}
             placeholder="text"
@@ -168,7 +168,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.bankcard}
             onChange={(value: any) => {
               this.setState({
-                bankcard: value,
+                bankcard: value
               });
             }}
             placeholder="bankCard"
@@ -181,7 +181,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.phone}
             onChange={(value: any) => {
               this.setState({
-                phone: value,
+                phone: value
               });
             }}
             placeholder="phone"
@@ -194,7 +194,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.password}
             onChange={(value: any) => {
               this.setState({
-                password: value,
+                password: value
               });
             }}
             placeholder="password"
@@ -207,7 +207,7 @@ export default class BasicInputItemExample extends React.Component<any, any> {
             value={this.state.number}
             onChange={(value: any) => {
               this.setState({
-                number: value,
+                number: value
               });
             }}
             placeholder="number"

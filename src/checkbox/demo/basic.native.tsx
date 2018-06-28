@@ -2,6 +2,7 @@
 import { Checkbox, List, WhiteSpace } from 'antd-mobile';
 import React from 'react';
 import { Text, View } from 'react-native';
+
 const AgreeItem = Checkbox.AgreeItem;
 const CheckboxItem = Checkbox.CheckboxItem;
 
@@ -11,7 +12,7 @@ export default class BasicCheckboxExample extends React.Component<any, any> {
     this.state = {
       checkBox1: true,
       agreeItem1: true,
-      checkboxItem1: true,
+      checkboxItem1: true
     };
   }
 

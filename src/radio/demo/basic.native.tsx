@@ -2,12 +2,13 @@
 import { List, Radio, WhiteSpace } from 'antd-mobile';
 import React from 'react';
 import { Text, View } from 'react-native';
+
 const RadioItem = Radio.RadioItem;
 
 export default class BasicRadioExample extends React.Component<any, any> {
   state = {
     part1Value: 1,
-    part2Value: 1,
+    part2Value: 1
   };
 
   render() {

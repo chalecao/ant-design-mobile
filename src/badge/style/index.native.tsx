@@ -16,10 +16,10 @@ const grid = 4;
 
 export default {
   wrap: {
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
   textCornerWrap: {
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   dot: {
     width: 2 * grid,
@@ -28,12 +28,12 @@ export default {
     backgroundColor: variables.brand_important,
     position: 'absolute',
     top: -1 * grid,
-    right: -1 * grid,
+    right: -1 * grid
   },
   dotSizelarge: {
     width: 4 * grid,
     height: 4 * grid,
-    borderRadius: 2 * grid,
+    borderRadius: 2 * grid
   },
   textDom: {
     paddingVertical: 0.5 * grid,
@@ -43,25 +43,25 @@ export default {
     borderStyle: 'solid',
     position: 'absolute',
     top: -10,
-    right: -15,
+    right: -15
   },
   textCorner: {
     width: 18 * grid,
     backgroundColor: variables.brand_important,
     transform: [
       {
-        rotate: '45deg',
-      },
+        rotate: '45deg'
+      }
     ],
     position: 'absolute',
-    top: 2 * grid,
+    top: 2 * grid
   },
   textCornerlarge: {
     width: 26 * grid,
-    top: 3 * grid,
+    top: 3 * grid
   },
   text: {
     color: variables.color_text_base_inverse,
-    textAlign: 'center',
-  },
+    textAlign: 'center'
+  }
 };

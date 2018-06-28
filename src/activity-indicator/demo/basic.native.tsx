@@ -3,7 +3,7 @@ import {
   Button,
   Flex,
   WhiteSpace,
-  WingBlank,
+  WingBlank
 } from 'antd-mobile';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -16,7 +16,7 @@ export default class ActivityIndicatorExample extends React.Component<
   constructor(props: any) {
     super(props);
     this.state = {
-      animating: false,
+      animating: false
     };
     this.loadingToast = this.loadingToast.bind(this);
   }
@@ -97,21 +97,21 @@ export default class ActivityIndicatorExample extends React.Component<
 
 const styles = StyleSheet.create({
   demo: {
-    marginTop: 20,
+    marginTop: 20
   },
   darkBg: {
     alignItems: 'center',
     justifyContent: 'center',
     width: 89,
     height: 89,
-    backgroundColor: '#2B2F42',
+    backgroundColor: '#2B2F42'
   },
   gray: {
-    backgroundColor: '#CCC',
+    backgroundColor: '#CCC'
   },
   horizontal: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    padding: 8,
-  },
+    padding: 8
+  }
 });

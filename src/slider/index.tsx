@@ -16,7 +16,7 @@ export interface SliderProps extends SliderPropsType {
 
 export default class Slider extends React.Component<SliderProps, any> {
   static defaultProps = {
-    prefixCls: 'am-slider',
+    prefixCls: 'am-slider'
   };
   render() {
     return (

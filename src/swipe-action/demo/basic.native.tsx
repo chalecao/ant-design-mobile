@@ -9,25 +9,25 @@ export default class BasicSwipeActionExample extends React.Component<any, any> {
       {
         text: 'More',
         onPress: () => console.log('more'),
-        style: { backgroundColor: 'orange', color: 'white' },
+        style: { backgroundColor: 'orange', color: 'white' }
       },
       {
         text: 'Delete',
         onPress: () => console.log('delete'),
-        style: { backgroundColor: 'red', color: 'white' },
-      },
+        style: { backgroundColor: 'red', color: 'white' }
+      }
     ];
     const left = [
       {
         text: 'Read',
         onPress: () => console.log('read'),
-        style: { backgroundColor: 'blue', color: 'white' },
+        style: { backgroundColor: 'blue', color: 'white' }
       },
       {
         text: 'Reply',
         onPress: () => console.log('reply'),
-        style: { backgroundColor: 'green', color: 'white' },
-      },
+        style: { backgroundColor: 'green', color: 'white' }
+      }
     ];
 
     return (

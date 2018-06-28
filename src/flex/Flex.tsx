@@ -16,7 +16,7 @@ export default class Flex extends React.Component<FlexProps, any> {
 
   static defaultProps = {
     prefixCls: 'am-flexbox',
-    align: 'center',
+    align: 'center'
   };
 
   render() {
@@ -30,7 +30,7 @@ export default class Flex extends React.Component<FlexProps, any> {
       children,
       prefixCls,
       style,
-      ...restProps,
+      ...restProps
     } = this.props;
 
     const wrapCls = classnames(prefixCls, className, {
@@ -60,7 +60,7 @@ export default class Flex extends React.Component<FlexProps, any> {
       [`${prefixCls}-align-content-center`]: alignContent === 'center',
       [`${prefixCls}-align-content-between`]: alignContent === 'between',
       [`${prefixCls}-align-content-around`]: alignContent === 'around',
-      [`${prefixCls}-align-content-stretch`]: alignContent === 'stretch',
+      [`${prefixCls}-align-content-stretch`]: alignContent === 'stretch'
     });
 
     return (

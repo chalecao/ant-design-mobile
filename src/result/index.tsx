@@ -14,7 +14,7 @@ export default class Result extends React.Component<ResultProps, any> {
   static defaultProps = {
     prefixCls: 'am-result',
     buttonType: '',
-    onButtonClick: () => {},
+    onButtonClick: () => {}
   };
 
   render() {
@@ -28,7 +28,7 @@ export default class Result extends React.Component<ResultProps, any> {
       message,
       buttonText,
       onButtonClick,
-      buttonType,
+      buttonType
     } = this.props;
 
     let imgContent: JSX.Element | null = null;

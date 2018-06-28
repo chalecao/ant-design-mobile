@@ -7,7 +7,7 @@ export interface CardBodyProps extends React.HTMLProps<HTMLDivElement> {
 
 export default class CardBody extends React.Component<CardBodyProps, any> {
   static defaultProps = {
-    prefixCls: 'am-card',
+    prefixCls: 'am-card'
   };
 
   render() {

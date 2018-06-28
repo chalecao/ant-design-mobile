@@ -89,32 +89,32 @@ describe('Button', () => {
 
   // https://github.com/airbnb/enzyme/issues/386
   // describe('disabled', () => {
-    // let wrapper;
+  // let wrapper;
 
-    // beforeEach(() => {
-      // wrapper = shallow(<Button disabled onPressIn={onPressIn}>foo</Button>);
-    // });
+  // beforeEach(() => {
+  // wrapper = shallow(<Button disabled onPressIn={onPressIn}>foo</Button>);
+  // });
 
-    // it.only('pressIn not change pressIn state', () => {
-      // wrapper.find('TouchableHighlight').simulate('pressIn');
-      // expect(wrapper.state('pressIn')).toBe(false);
-    // });
+  // it.only('pressIn not change pressIn state', () => {
+  // wrapper.find('TouchableHighlight').simulate('pressIn');
+  // expect(wrapper.state('pressIn')).toBe(false);
+  // });
 
-    // it('pressOut not change pressIn state', () => {
-    //   wrapper.setState({ pressIn: true });
-    //   wrapper.find('TouchableHighlight').simulate('pressOut');
-    //   expect(wrapper.state('pressIn')).toBe(true);
-    // });
-    //
-    // it('showUnderlay not change touchIt state', () => {
-    //   wrapper.find('TouchableHighlight').simulate('showUnderlay');
-    //   expect(wrapper.state('touchIt')).toBe(false);
-    // });
-    //
-    // it('hideUnderlay not change touchIt state', () => {
-    //   wrapper.setState({ touchIt: true });
-    //   wrapper.find('TouchableHighlight').simulate('hideUnderlay');
-    //   expect(wrapper.state('touchIt')).toBe(true);
-    // });
+  // it('pressOut not change pressIn state', () => {
+  //   wrapper.setState({ pressIn: true });
+  //   wrapper.find('TouchableHighlight').simulate('pressOut');
+  //   expect(wrapper.state('pressIn')).toBe(true);
+  // });
+  //
+  // it('showUnderlay not change touchIt state', () => {
+  //   wrapper.find('TouchableHighlight').simulate('showUnderlay');
+  //   expect(wrapper.state('touchIt')).toBe(false);
+  // });
+  //
+  // it('hideUnderlay not change touchIt state', () => {
+  //   wrapper.setState({ touchIt: true });
+  //   wrapper.find('TouchableHighlight').simulate('hideUnderlay');
+  //   expect(wrapper.state('touchIt')).toBe(true);
+  // });
   // });
 });

@@ -15,7 +15,7 @@ export default class SliderAntm extends React.Component<SliderProps, any> {
     defaultValue: 0,
     disabled: false,
     maximumTrackTintColor: SliderStyle.maximum.color,
-    minimumTrackTintColor: SliderStyle.minimum.color,
+    minimumTrackTintColor: SliderStyle.minimum.color
   };
 
   render() {
@@ -29,7 +29,7 @@ export default class SliderAntm extends React.Component<SliderProps, any> {
       onChange,
       onAfterChange,
       maximumTrackTintColor,
-      minimumTrackTintColor,
+      minimumTrackTintColor
     } = this.props;
     return (
       <View>

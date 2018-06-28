@@ -9,7 +9,7 @@ export interface CardFooterProps extends CardFooterPropsType {
 
 export default class CardFooter extends React.Component<CardFooterProps, any> {
   static defaultProps = {
-    prefixCls: 'am-card',
+    prefixCls: 'am-card'
   };
 
   render() {

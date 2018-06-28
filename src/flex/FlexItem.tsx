@@ -10,7 +10,7 @@ export interface FlexItemProps extends FlexItemPropsType {
 
 export default class FlexItem extends React.Component<FlexItemProps, any> {
   static defaultProps = {
-    prefixCls: 'am-flexbox',
+    prefixCls: 'am-flexbox'
   };
   render() {
     const { children, className, prefixCls, style, ...restProps } = this.props;

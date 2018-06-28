@@ -3,7 +3,7 @@ import React from 'react';
 
 const locale = {
   prevText: '上一步',
-  nextText: '下一步',
+  nextText: '下一步'
 };
 
 export default class BasicPaginationExample extends React.Component<any, any> {

@@ -1,0 +1,1 @@
+{"code":"function noop() { }\r\nexport const defaultProps = {\r\n    prefixCls: 'am-search',\r\n    placeholder: '',\r\n    onSubmit: noop,\r\n    onChange: noop,\r\n    onFocus: noop,\r\n    onBlur: noop,\r\n    onClear: noop,\r\n    showCancelButton: false,\r\n    disabled: false\r\n};\r\n"}

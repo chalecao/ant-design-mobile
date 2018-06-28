@@ -14,11 +14,11 @@ export default class DatePickerView extends React.Component<
     prefixCls: 'am-picker',
     pickerPrefixCls: 'am-picker-col',
     minuteStep: 1,
-    use12Hours: false,
+    use12Hours: false
   };
 
   static contextTypes = {
-    antLocale: PropTypes.object,
+    antLocale: PropTypes.object
   };
 
   render() {

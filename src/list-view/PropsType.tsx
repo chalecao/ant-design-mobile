@@ -1,4 +1,5 @@
 import React from 'react';
+
 export interface ListViewPropsType {
   dataSource: any;
   initialListSize?: number;

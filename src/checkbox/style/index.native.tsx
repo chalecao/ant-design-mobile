@@ -13,25 +13,25 @@ export interface ICheckboxStyle {
 export default {
   wrapper: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   icon: {
     width: variables.icon_size_sm,
-    height: variables.icon_size_sm,
+    height: variables.icon_size_sm
   },
   iconRight: {
-    marginLeft: variables.h_spacing_md,
+    marginLeft: variables.h_spacing_md
   },
   agreeItem: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   agreeItemCheckbox: {
     marginLeft: variables.h_spacing_lg,
-    marginRight: variables.h_spacing_md,
+    marginRight: variables.h_spacing_md
   },
   checkboxItemCheckbox: {
     marginRight: variables.h_spacing_md,
-    alignSelf: 'center',
-  },
+    alignSelf: 'center'
+  }
 };

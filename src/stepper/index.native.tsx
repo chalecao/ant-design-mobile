@@ -15,17 +15,17 @@ export default class Stepper extends React.Component<StepProps, any> {
     readOnly: false,
     disabled: false,
     styles,
-    inputStyle: {},
+    inputStyle: {}
   };
 
   render() {
     const inputAndroidStyle =
       Platform.OS === 'android'
         ? {
-            top: 6,
-            paddingTop: 0,
-            height: 26,
-          }
+          top: 6,
+          paddingTop: 0,
+          height: 26
+        }
         : {};
     const { inputStyle, ...restProps } = this.props;
     const keyboardType =
@@ -33,7 +33,7 @@ export default class Stepper extends React.Component<StepProps, any> {
     // tslint:disable-next-line:variable-name
     const _inputStyle = {
       ...inputAndroidStyle,
-      ...inputStyle,
+      ...inputStyle
     };
     return (
       <RMCInputNumber

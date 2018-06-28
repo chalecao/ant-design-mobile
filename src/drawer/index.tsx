@@ -5,7 +5,7 @@ import { DrawerWebProps } from './PropsType';
 export default class Drawer extends React.Component<DrawerWebProps, any> {
   static defaultProps = {
     prefixCls: 'am-drawer',
-    enableDragHandle: false,
+    enableDragHandle: false
   };
   render() {
     return <RmcDrawer {...this.props} />;

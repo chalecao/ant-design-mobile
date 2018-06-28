@@ -5,7 +5,7 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import CameraRollPicker from 'react-native-camera-roll-picker';
 import varibles from '../style/themes/default.native';
@@ -17,7 +17,7 @@ export interface ImageRollProps {
 
 const styles = StyleSheet.create({
   statusBarBg: {
-    height: 5 * 4,
+    height: 5 * 4
   },
   naviBar: {
     flexDirection: 'row',
@@ -25,20 +25,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 1,
     borderBottomColor: '#d9d9d9',
-    height: 11 * 4,
+    height: 11 * 4
   },
   barTitle: {
     flex: 1,
     textAlign: 'center',
     fontWeight: '500',
     marginLeft: 7 * 4,
-    fontSize: 16,
+    fontSize: 16
   },
   rightBtn: {
     width: 14 * 4,
     color: varibles.brand_primary,
-    fontSize: 16,
-  },
+    fontSize: 16
+  }
 });
 
 export default class ImageRoll extends React.Component<ImageRollProps, any> {

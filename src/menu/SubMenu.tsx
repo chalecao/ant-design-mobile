@@ -29,7 +29,7 @@ export default function SubMenu(props: PropsType) {
     subMenuData,
     showSelect,
     selItem,
-    multiSelect,
+    multiSelect
   } = props;
   const selected = (dataItem: DataItem) =>
     showSelect &&
@@ -43,7 +43,7 @@ export default function SubMenu(props: PropsType) {
         <List.Item
           className={classnames(`${radioPrefixCls}-item`, {
             [`${subMenuPrefixCls}-item-selected`]: selected(dataItem),
-            [`${subMenuPrefixCls}-item-disabled`]: dataItem.disabled,
+            [`${subMenuPrefixCls}-item-disabled`]: dataItem.disabled
           })}
           key={idx}
           extra={

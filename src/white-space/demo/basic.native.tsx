@@ -9,7 +9,7 @@ const PlaceHolder = (props: any) => (
       backgroundColor: '#fff',
       height: 30,
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center'
     }}
     {...props}
   >

@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import {
   Pagination, LocaleProvider, List, DatePicker, WhiteSpace, WingBlank,
-  Picker, SearchBar,
+  Picker, SearchBar
 } from 'antd-mobile';
 import enUS from '../en_US';
 import ruRU from '../ru_RU';
@@ -14,23 +14,23 @@ const seasons = [
   [
     {
       label: '2013',
-      value: '2013',
+      value: '2013'
     },
     {
       label: '2014',
-      value: '2014',
-    },
+      value: '2014'
+    }
   ],
   [
     {
       label: '春',
-      value: '春',
+      value: '春'
     },
     {
       label: '夏',
-      value: '夏',
-    },
-  ],
+      value: '夏'
+    }
+  ]
 ];
 
 const Page = () => (
@@ -59,13 +59,13 @@ export default class LocaleProviderExample extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      locale: 'English',
+      locale: 'English'
     };
   }
 
   onChange = (value: any) => {
     this.setState({
-      locale: value[0],
+      locale: value[0]
     });
   }
 
@@ -75,18 +75,18 @@ export default class LocaleProviderExample extends React.Component<any, any> {
       {
         value: '中国',
         label: '中国',
-        language: undefined,
+        language: undefined
       },
       {
         value: 'English',
         label: 'English',
-        language: enUS,
+        language: enUS
       },
       {
         value: 'Русский',
         label: 'Русский',
-        language: ruRU,
-      },
+        language: ruRU
+      }
     ];
     const currentLocale = languages.find(item => item.value === locale).language;
 

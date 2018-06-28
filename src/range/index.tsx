@@ -11,7 +11,7 @@ export interface RangeProps extends RangePropsType {
 
 export default class Range extends React.Component<RangeProps, any> {
   static defaultProps = {
-    prefixCls: 'am-slider',
+    prefixCls: 'am-slider'
   };
 
   render() {

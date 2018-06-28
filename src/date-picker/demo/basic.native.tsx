@@ -10,7 +10,7 @@ export default class PopupExample extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      value: undefined,
+      value: undefined
     };
   }
 
