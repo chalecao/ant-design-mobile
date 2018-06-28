@@ -43,6 +43,7 @@ compileDir(componentDir)
 //to build fast, add limit
 const whiteList = [
     // 'list/..',
+    'modal',
     'list',
     'picker',
     'button',
@@ -127,7 +128,7 @@ function rollupFile(file) {
                 })
             ]
         }).then(bundle => bundle.write({
-            file: `dist/${file}${format === 'cjs' ? '' : `.${format}`}.js`,
+            file: `${format === 'cjs' ? `dist/${file}` : `es/${file}`}.js`,
             format,
             sourceMap: true,
             name: format === 'umd' ? pkg.name : undefined,
