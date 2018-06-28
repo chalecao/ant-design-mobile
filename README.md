@@ -4,6 +4,10 @@ preact mobile component，pure clean ui component for mobile h5 development. ori
     * compile es and umd and cjs module in component folder
     * easily used with rollup
 
+tips：compiled file in dist dir, recommend use .es.js file which use es module. default
+.js file is cjs module.
+
+
 ## Ant Design Mobile
 
 [Ant Design Mobile](https://github.com/ant-design/ant-design-mobile)

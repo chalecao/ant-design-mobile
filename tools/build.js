@@ -36,7 +36,12 @@ let override = {
         declaration: false
     }
 };
-let components = [
+
+const componentDir = path.join(process.cwd(), 'src')
+compileDir(componentDir)
+
+//to build fast, add limit
+const whiteList = [
     // 'list/..',
     'list',
     'picker',
@@ -44,30 +49,46 @@ let components = [
     'stepper',
     'toast',
     'calendar',
-    'calendar/locale',
     'input-item'
 ]
-// Compile source code into a distributable format with Babel
-components.forEach(file => {
+
+function compileDir(dir) {
+    // dir.forEach(file => {
     // __dirname：    获得当前执行文件所在目录的完整目录名
     // __filename：   获得当前执行文件的带有完整绝对路径的文件名
     // process.cwd()：获得当前执行node命令时候的文件夹目录名
     // ./：           文件所在目录
-
-    const componentDir = path.join(process.cwd(), 'src', file)
-    console.log(componentDir)
-    fs.readdir(componentDir, (err, files) => {
+    // console.log(dir)
+    fs.readdir(dir, (err, files) => {
         files && files.forEach(subfile => {
-            if (!subfile.match("native") && subfile.endsWith(".tsx")){
-                rollupFile(path.join(file, subfile).replace(".tsx",""))
+            if (!subfile.match("native") && subfile.endsWith(".tsx")
+            && !subfile.match("android") && !subfile.match("ios")
+        ) {
+                // not build src/index.tsx
+                // if (!dir.endsWith("src"))
+                    rollupFile(path.join(dir.substr(dir.indexOf("src") + 4), subfile).replace(".tsx", ""))
+
+            } else if (!subfile.match(/\./) && !subfile.match("tests")
+            && !subfile.match("demo") && !subfile.match("_")
+            && !subfile.match("style")
+            // && whiteList.indexOf(subfile) >= 0
+        ) {
+                compileDir(path.join(dir, subfile))
             }
         });
     })
 
-})
+    // })
+}
 
 function rollupFile(file) {
-    ['es', 'cjs', 'umd'].forEach((format) => {
+    console.log(file);
+    // return;
+    [
+        'es',
+        // 'cjs',
+        // 'umd'
+    ].forEach((format) => {
         promise = promise.then(() => rollup.rollup({
             input: `src/${file}.tsx`,
             external: [],
