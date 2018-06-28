@@ -11,6 +11,7 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 const del = require('del');
 const rollup = require('rollup');
 const babel = require('rollup-plugin-babel');
@@ -20,7 +21,9 @@ const minify = require('uglify-es').minify;
 const buble = require('rollup-plugin-buble');
 let promise = Promise.resolve();
 var typescript = require('rollup-plugin-typescript2');
-var commonjs = require( 'rollup-plugin-commonjs')
+var commonjs = require('rollup-plugin-commonjs')
+// var resolve = require('rollup-plugin-node-resolve')
+
 // Clean up the output directory
 // promise = promise.then(() => del(['dist/*']));
 let defaults = {
@@ -34,32 +37,51 @@ let override = {
     }
 };
 let components = [
-    'list/..',
+    // 'list/..',
     'list',
     'picker',
     'button',
     'stepper',
     'toast',
     'calendar',
+    'calendar/locale',
     'input-item'
 ]
 // Compile source code into a distributable format with Babel
 components.forEach(file => {
+    // __dirname：    获得当前执行文件所在目录的完整目录名
+    // __filename：   获得当前执行文件的带有完整绝对路径的文件名
+    // process.cwd()：获得当前执行node命令时候的文件夹目录名
+    // ./：           文件所在目录
 
+    const componentDir = path.join(process.cwd(), 'src', file)
+    console.log(componentDir)
+    fs.readdir(componentDir, (err, files) => {
+        files && files.forEach(subfile => {
+            if (!subfile.match("native") && subfile.endsWith(".tsx")){
+                rollupFile(path.join(file, subfile).replace(".tsx",""))
+            }
+        });
+    })
+
+})
+
+function rollupFile(file) {
     ['es', 'cjs', 'umd'].forEach((format) => {
         promise = promise.then(() => rollup.rollup({
-            input: `src/${file}/index.tsx`,
+            input: `src/${file}.tsx`,
             external: [],
             plugins: [
                 commonjs({
                     include: 'node_modules/**', // 包括
-                    exclude: [],  // 排除
+                    exclude: [], // 排除
                 }),
                 typescript({
                     tsconfigDefaults: defaults,
                     tsconfig: "tsconfig.json",
                     tsconfigOverride: override
                 }),
+                // resolve({ "jsnext": true, module: true, main: true }),
                 babel({
                     "presets": [
                         [
@@ -83,13 +105,13 @@ components.forEach(file => {
                 })
             ]
         }).then(bundle => bundle.write({
-            file: `dist/${file}/${format === 'cjs' ? 'index' : `index.${format}`}.js`,
+            file: `dist/${file}${format === 'cjs' ? '' : `.${format}`}.js`,
             format,
             sourceMap: true,
             name: format === 'umd' ? pkg.name : undefined,
         })));
     });
-})
+}
 
 // Copy package.json and LICENSE.txt
 // promise = promise.then(() => {
