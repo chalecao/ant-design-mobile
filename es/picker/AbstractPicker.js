@@ -1,107 +1,31 @@
+import _extends from 'babel-runtime/helpers/extends';
+import _classCallCheck from 'babel-runtime/helpers/classCallCheck';
+import _createClass from 'babel-runtime/helpers/createClass';
+import _possibleConstructorReturn from 'babel-runtime/helpers/possibleConstructorReturn';
+import _inherits from 'babel-runtime/helpers/inherits';
+var __rest = this && this.__rest || function (s, e) {
+    var t = {};
+    for (var p in s) {
+        if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    }if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+        if (e.indexOf(p[i]) < 0) t[p[i]] = s[p[i]];
+    }return t;
+};
+/* tslint:disable:jsx-no-multiline-js */
 import treeFilter from 'array-tree-filter';
 import React from 'react';
-import RMCCascader from 'rmc-cascader/lib/Cascader';
-import RMCPopupCascader from 'rmc-cascader/lib/Popup';
-import RMCMultiPicker from 'rmc-picker/lib/MultiPicker';
-import RMCPicker from 'rmc-picker/lib/Picker';
-
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
-
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
-
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
-***************************************************************************** */
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
-            t[p[i]] = s[p[i]];
-    return t;
-}
-
-function getComponentLocale(props, context, componentName, getDefaultLocale) {
-    var locale = {};
-    if (context && context.antLocale && context.antLocale[componentName]) {
-        locale = context.antLocale[componentName];
-    } else {
-        var defaultLocale = getDefaultLocale();
-        // TODO: make default lang of antd be English
-        // https://github.com/ant-design/ant-design/issues/6334
-        locale = defaultLocale.default || defaultLocale;
-    }
-    var result = Object.assign({}, locale);
-    if (props.locale) {
-        result = Object.assign({}, result, props.locale);
-        if (props.locale.lang) {
-            result.lang = Object.assign({}, locale.lang, props.locale.lang);
-        }
-    }
-    return result;
-}
-
-var localeCN = {
-    okText: '确定',
-    dismissText: '取消',
-    extra: '请选择'
-};
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-var inherits = function (subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-
-var possibleConstructorReturn = function (self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return call && (typeof call === "object" || typeof call === "function") ? call : self;
-};
-
-function getDefaultProps() {
+import RMCCascader from 'rmc-cascader/es/Cascader';
+import RMCPopupCascader from 'rmc-cascader/es/Popup';
+import RMCMultiPicker from 'rmc-picker/es/MultiPicker';
+import RMCPicker from 'rmc-picker/es/Picker';
+import { getComponentLocale } from '../_util/getLocale';
+import _local from './locale/zh_CN'
+export function getDefaultProps() {
     var defaultFormat = function defaultFormat(values) {
+        // label is JSX.Element or other
+        if (values.length > 0 && typeof values[0] !== 'string') {
+            return values;
+        }
         return values.join(',');
     };
     return {
@@ -117,12 +41,12 @@ function getDefaultProps() {
 }
 
 var AbstractPicker = function (_React$Component) {
-    inherits(AbstractPicker, _React$Component);
+    _inherits(AbstractPicker, _React$Component);
 
     function AbstractPicker() {
-        classCallCheck(this, AbstractPicker);
+        _classCallCheck(this, AbstractPicker);
 
-        var _this = possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (AbstractPicker.__proto__ || Object.getPrototypeOf(AbstractPicker)).apply(this, arguments));
 
         _this.getSel = function () {
             var value = _this.props.value || [];
@@ -210,54 +134,56 @@ var AbstractPicker = function (_React$Component) {
         return _this;
     }
 
-    AbstractPicker.prototype.render = function render() {
-        var _a = this.props,
-            children = _a.children,
-            _a$value = _a.value,
-            value = _a$value === undefined ? [] : _a$value,
-            popupPrefixCls = _a.popupPrefixCls,
-            itemStyle = _a.itemStyle,
-            indicatorStyle = _a.indicatorStyle,
-            okText = _a.okText,
-            dismissText = _a.dismissText,
-            extra = _a.extra,
-            cascade = _a.cascade,
-            prefixCls = _a.prefixCls,
-            pickerPrefixCls = _a.pickerPrefixCls,
-            data = _a.data,
-            cols = _a.cols,
-            onOk = _a.onOk,
-            restProps = __rest(_a, ["children", "value", "popupPrefixCls", "itemStyle", "indicatorStyle", "okText", "dismissText", "extra", "cascade", "prefixCls", "pickerPrefixCls", "data", "cols", "onOk"]);
-        // tslint:disable-next-line:variable-name
-        var _locale = getComponentLocale(this.props, this.context, 'Picker', function () {
-            return localeCN;
-        });
-        var cascader = void 0;
-        var popupMoreProps = {};
-        if (cascade) {
-            cascader = React.createElement(RMCCascader, { prefixCls: prefixCls, pickerPrefixCls: pickerPrefixCls, data: data, cols: cols, onChange: this.onPickerChange, onScrollChange: this.setCasecadeScrollValue, pickerItemStyle: itemStyle, indicatorStyle: indicatorStyle });
-        } else {
-            cascader = React.createElement(
-                RMCMultiPicker,
-                { style: { flexDirection: 'row', alignItems: 'center' }, prefixCls: prefixCls, onScrollChange: this.setScrollValue },
-                this.getPickerCol()
+    _createClass(AbstractPicker, [{
+        key: 'render',
+        value: function render() {
+            var _a = this.props,
+                children = _a.children,
+                _a$value = _a.value,
+                value = _a$value === undefined ? [] : _a$value,
+                popupPrefixCls = _a.popupPrefixCls,
+                itemStyle = _a.itemStyle,
+                indicatorStyle = _a.indicatorStyle,
+                okText = _a.okText,
+                dismissText = _a.dismissText,
+                extra = _a.extra,
+                cascade = _a.cascade,
+                prefixCls = _a.prefixCls,
+                pickerPrefixCls = _a.pickerPrefixCls,
+                data = _a.data,
+                cols = _a.cols,
+                onOk = _a.onOk,
+                restProps = __rest(_a, ["children", "value", "popupPrefixCls", "itemStyle", "indicatorStyle", "okText", "dismissText", "extra", "cascade", "prefixCls", "pickerPrefixCls", "data", "cols", "onOk"]);
+            // tslint:disable-next-line:variable-name
+            var _locale = getComponentLocale(this.props, this.context, 'Picker', function () {
+                return _local;
+            });
+            var cascader = void 0;
+            var popupMoreProps = {};
+            if (cascade) {
+                cascader = React.createElement(RMCCascader, { prefixCls: prefixCls, pickerPrefixCls: pickerPrefixCls, data: data, cols: cols, onChange: this.onPickerChange, onScrollChange: this.setCasecadeScrollValue, pickerItemStyle: itemStyle, indicatorStyle: indicatorStyle });
+            } else {
+                cascader = React.createElement(
+                    RMCMultiPicker,
+                    { style: { flexDirection: 'row', alignItems: 'center' }, prefixCls: prefixCls, onScrollChange: this.setScrollValue },
+                    this.getPickerCol()
+                );
+                popupMoreProps = {
+                    pickerValueProp: 'selectedValue',
+                    pickerValueChangeProp: 'onValueChange'
+                };
+            }
+            return React.createElement(
+                RMCPopupCascader,
+                _extends({ cascader: cascader }, this.popupProps, restProps, { prefixCls: popupPrefixCls, value: value, dismissText: dismissText || _locale.dismissText, okText: okText || _locale.okText }, popupMoreProps, { ref: this.fixOnOk, onVisibleChange: this.onVisibleChange }),
+                children && typeof children !== 'string' && React.isValidElement(children) && React.cloneElement(children, {
+                    extra: this.getSel() || extra || _locale.extra
+                })
             );
-            popupMoreProps = {
-                pickerValueProp: 'selectedValue',
-                pickerValueChangeProp: 'onValueChange'
-            };
         }
-        return React.createElement(
-            RMCPopupCascader,
-            _extends({ cascader: cascader }, this.popupProps, restProps, { prefixCls: popupPrefixCls, value: value, dismissText: dismissText || _locale.dismissText, okText: okText || _locale.okText }, popupMoreProps, { ref: this.fixOnOk, onVisibleChange: this.onVisibleChange }),
-            children && typeof children !== 'string' && React.isValidElement(children) && React.cloneElement(children, {
-                extra: this.getSel() || extra || _locale.extra
-            })
-        );
-    };
+    }]);
 
     return AbstractPicker;
 }(React.Component);
 
 export default AbstractPicker;
-export { getDefaultProps };

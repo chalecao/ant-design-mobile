@@ -1,7 +1,5 @@
-var en_US = {
+export default {
     confirmLabel: 'Done',
     backspaceLabel: 'Backspace',
     cancelKeyboardLabel: 'CancelKeyboard'
 };
-
-export default en_US;

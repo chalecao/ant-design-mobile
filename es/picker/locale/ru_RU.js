@@ -1,7 +1,5 @@
-var ru_RU = {
+export default {
     okText: 'Ок',
     dismissText: 'Отмена',
     extra: ''
 };
-
-export default ru_RU;

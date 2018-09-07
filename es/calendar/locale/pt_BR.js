@@ -1,5 +1,2 @@
-import Locale from 'rmc-calendar/lib/locale/pt_BR';
-
-
-
+import Locale from 'rmc-calendar/es/locale/pt_BR';
 export default Locale;

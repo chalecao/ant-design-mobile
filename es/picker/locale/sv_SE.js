@@ -1,7 +1,5 @@
-var sv_SE = {
+export default {
     okText: 'Ok',
     dismissText: 'Avbryt',
     extra: 'vänligen välj'
 };
-
-export default sv_SE;

@@ -1,7 +1,5 @@
-var ru_RU = {
+export default {
     confirmLabel: 'Ок',
     backspaceLabel: 'возврат на одну позицию',
     cancelKeyboardLabel: 'Отменить клавиатуру'
 };
-
-export default ru_RU;

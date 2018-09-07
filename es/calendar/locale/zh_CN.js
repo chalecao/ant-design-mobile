@@ -1,5 +1,2 @@
-import Locale from 'rmc-calendar/lib/locale/zh_CN';
-
-
-
+import Locale from 'rmc-calendar/es/locale/zh_CN';
 export default Locale;
